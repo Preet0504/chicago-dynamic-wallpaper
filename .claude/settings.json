@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/preetpatel/Documents/wallpapers/.claude/hooks/py_check.sh",
+            "timeout": 30,
+            "statusMessage": "Checking Python compiles"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/preetpatel/Documents/wallpapers/.claude/hooks/agent_log.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/preetpatel/Documents/wallpapers/.claude/hooks/agent_log.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "advisorModel": "opus"
+}

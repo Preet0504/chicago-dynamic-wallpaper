@@ -1,0 +1,14 @@
+# environments / runtime output
+.venv/
+__pycache__/
+logs/
+frames/
+state.json
+.DS_Store
+*.tmp.npz
+# regenerated automatically on first render
+render/cache_*.npz
+# local backups made by tools/ai_region_edit.py
+templates/ai/backup/
+# benchmark render images (scores, reviews, manifests and costs are kept)
+benchmark/**/*.png

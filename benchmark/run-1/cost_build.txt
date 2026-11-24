@@ -1,0 +1,7 @@
+a338b1d884a9f9d7a    Time-of-day detail polish              msgs   71  in      144  out   104977  cache_r   11592070  cache_w    420159  $   6.52  claude-opus-5-5
+a8c089d8b3900d1b6    Fog, snowfall effects and depth map    msgs   56  in      110  out   111031  cache_r    8331806  cache_w    239101  $   5.08  <synthetic>,claude-opus-5-5
+a9ac45e3d2e8dad06    Winter season template painter         msgs   52  in      104  out   114444  cache_r    7746095  cache_w    236909  $   5.02  claude-opus-5-5
+abfdb501ace82f6ad    Rain and storm weather effects         msgs   85  in      168  out   110185  cache_r   14013851  cache_w    269733  $   6.36  <synthetic>,claude-opus-5-5
+ad3cb83718dd31851    Summer season template painter         msgs   61  in      120  out    97748  cache_r    8364252  cache_w    215904  $   4.71  <synthetic>,claude-opus-5-5
+TOTAL $27.69
+orchestrator         main session                           msgs   37  in       84  out    58056  cache_r   14742059  cache_w    241333  $   6.04  <synthetic>,claude-opus-5-5

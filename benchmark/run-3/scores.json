@@ -1,0 +1,413 @@
+{
+  "run": 3,
+  "items": [
+    {
+      "id": 1,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 06:05",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Dawn, lit lanterns and windows, clean gradient, petals falling. White square at pagoda base is gone. Hanging lantern slightly hot."
+    },
+    {
+      "id": 2,
+      "season": "spring",
+      "weather": "partly_cloudy",
+      "when": "2026-04-15 13:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Clear lanterns-off day, pink blossoms. Clouds still soft blurry white blobs (not painted); golden smudge patch at right lake edge and hard horizon band; yellow-green glow on pagoda windows."
+    },
+    {
+      "id": 3,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 19:10",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Dusk with lanterns on and horizon glow, warm lake lights. Clean."
+    },
+    {
+      "id": 4,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 22:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Clean stars, lit town and reflections, no stray moon. Right hill/horizon strip now mostly soft."
+    },
+    {
+      "id": 5,
+      "season": "spring",
+      "weather": "rain",
+      "when": "2026-04-15 13:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Rain streaks, wet path puddles, mountain mist. Lake is speckle noise, grey smudges at pagoda base and far shore, hanging lantern ghost-grey."
+    },
+    {
+      "id": 6,
+      "season": "spring",
+      "weather": "storm",
+      "when": "2026-04-15 21:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Dramatic storm with lightning, blown petals, lit wet path. Lightning ends on flat dark band over mountain base; mountain outline has a cut line; lake plain."
+    },
+    {
+      "id": 7,
+      "season": "spring",
+      "weather": "fog",
+      "when": "2026-04-15 07:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Fog hides mountain, far shore faded, halos on lights. Sky flat beige; pagoda window glow strong."
+    },
+    {
+      "id": 8,
+      "season": "summer",
+      "weather": "clear",
+      "when": "2026-07-15 13:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 3,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Green leaves, no petals, reduced mountain snow. Leaf cluster still lime ivy-like shapes with hard black outlines; brown smoky smudges on far shore; pink-red path over-saturated; mountain stipple."
+    },
+    {
+      "id": 9,
+      "season": "summer",
+      "weather": "partly_cloudy",
+      "when": "2026-07-15 19:50",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Golden hour, pink clouds, lanterns on. Faint rectangular cloud blocks at mountain base (x~950-1030,y~600), hard leaf outlines."
+    },
+    {
+      "id": 10,
+      "season": "summer",
+      "weather": "clear",
+      "when": "2026-07-15 22:30",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Clean stars, lake lights, dark green leaves convincing. No fireflies (summer night rule). Hard-ish band at right hill."
+    },
+    {
+      "id": 11,
+      "season": "summer",
+      "weather": "storm",
+      "when": "2026-07-15 16:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Storm works with leaves blown, wet path. Lightning stops at flat dark band; leaf outlines look cut-out grey; hanging lantern dark."
+    },
+    {
+      "id": 12,
+      "season": "summer",
+      "weather": "rain",
+      "when": "2026-07-15 22:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Light night rain, lantern glow on wet path, no fireflies. Lake plain, mild streak noise."
+    },
+    {
+      "id": 13,
+      "season": "autumn",
+      "weather": "clear",
+      "when": "2026-10-14 09:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 5,
+        "light_consistency": 3,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Beautiful painted leaves. Sun disc and halo still sits behind pagoda spire; white halo outlines around leaf clusters and ridge; lake blown-out pale; autumn geometry offset from shared template."
+    },
+    {
+      "id": 14,
+      "season": "autumn",
+      "weather": "partly_cloudy",
+      "when": "2026-10-14 17:45",
+      "scores": {
+        "style_match": 5,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 5,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Best frame: golden light, crescent moon, lit lanterns, falling leaves. Cloud blobs are blurry not painted; faint rectangular blocks at right horizon."
+    },
+    {
+      "id": 15,
+      "season": "autumn",
+      "weather": "clear",
+      "when": "2026-10-14 22:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Lit town, soft reflections on lake and wet path, clean stars. Blue-teal halo fringes around leaf clusters, pagoda roofs and mountain ridge; pagoda spire has a glow smear."
+    },
+    {
+      "id": 16,
+      "season": "autumn",
+      "weather": "rain",
+      "when": "2026-10-14 18:20",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Moody rain dusk, lit lanterns, wet reflections, mist. Lake speckle, streaky glows near lanterns."
+    },
+    {
+      "id": 17,
+      "season": "autumn",
+      "weather": "fog",
+      "when": "2026-10-14 13:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Fog hides mountain, colour leaves survive. Pixel-block artifacts in leaf cluster top-left; hanging lantern dark/ghostly; flat grey sky."
+    },
+    {
+      "id": 18,
+      "season": "autumnlate",
+      "weather": "snow",
+      "when": "2026-11-20 13:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "New autumnlate scene: bare branch with a few rust leaves, light snowfall, frosted roofs and shrubs, litter on path. Rules now met and the best snow item so far. Faults: dark green blob left of pagoda, floating twig fragments below branch, bare twigs slightly pixelated, flat grey sky, town reads uniformly frosted."
+    },
+    {
+      "id": 19,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 13:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 3,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Bare snowy branch, snow caps on pagoda/roofs. Walkway is still a blown-out flat white sheet with a hard cut top edge burying the railing; giant white slab over bottom-left roofs; pavilion base drift; mushroom-like snow cap and stray white arc on hanging lantern; cartoon sun; no lake ice."
+    },
+    {
+      "id": 20,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 16:45",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 3,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Lovely dusk gradient, warm lit lanterns on snow. Same flat white path sheet with blurry footprints, huge bottom-left white slab, layout drift."
+    },
+    {
+      "id": 21,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 22:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Clean stars, lit town, snow-capped lanterns. No moon/ice on clear night, flat path sheet with hard top edge, slab at bottom-left."
+    },
+    {
+      "id": 22,
+      "season": "winter",
+      "weather": "snow",
+      "when": "2026-01-15 22:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Atmospheric: haze on mountain, warm lantern pools, flakes. Walkway is now a flat dark-grey sheet with a hard curved white lip (polygon edge, worse than run 2); flakes tiny/sparse, no big near layer; flat dark sky."
+    },
+    {
+      "id": 23,
+      "season": "winterbare",
+      "weather": "overcast",
+      "when": "2026-01-15 11:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "New winterbare: bare dark branch, no snow, dormant brown shrubs, stone path, overcast grey sky and no stars. Clean and rule-correct, a big gain over run 2. Faults: faint blotches in sky top-left, floating twig fragments at branch tip, lantern unlit-grey, desaturated sepia tone on shrubs."
+    },
+    {
+      "id": 24,
+      "season": "winter",
+      "weather": "fog",
+      "when": "2026-01-15 08:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 3,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Fog hides mountain, far shore faded, strong halos, snow-capped roofs. Flat beige sky; snow sheet and bottom-left slab still flat; fine overall."
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+{
+ "run": 3,
+ "model": "qwen3.5:122b",
+ "overall": 3.92,
+ "items": [
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lanterns are lit despite 06:05 Chicago time (dawn, not night) \u2014 violates daylight rule.",
+    "Sky shows twilight glow but no sun/moon visible \u2014 inconsistent with clear dawn lighting.",
+    "Lake surface too calm and reflective for early morning wind; lacks subtle ripples or mist.",
+    "Snow on Mount Fuji unrealistic for April 15 \u2014 should be mostly melted at this elevation.",
+    "Stone lanterns glow unnaturally bright without casting realistic pools on walkway.",
+    "Cherry blossoms fully open in April \u2014 correct, but petals floating mid-air lack motion blur."
+   ],
+   "verdict": "revise",
+   "id": 1,
+   "season": "spring",
+   "weather": "clear",
+   "when": "2026-04-15 06:05",
+   "seconds": 9.3
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during bright midday (13:00), violating daytime realism rules.",
+    "Sky is too clear and bright for 'partly_cloudy' condition; lacks cloud cover.",
+    "No shadows cast by structures or trees despite strong overhead sun.",
+    "Pavilion lantern glows unnaturally in daylight without being turned off.",
+    "Mountain and lake lack atmospheric haze expected under partly cloudy midday light.",
+    "Cherry blossoms are fully bloomed but no petals are falling despite spring setting."
+   ],
+   "verdict": "reject",
+   "id": 2,
+   "season": "spring",
+   "weather": "partly_cloudy",
+   "when": "2026-04-15 13:00",
+   "seconds": 9.1
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lanterns are lit despite it being 19:10 (daylight/dusk transition) \u2014 should be off or just turning on.",
+    "Sky is too clear and bright for dusk \u2014 lacks horizon glow or twilight gradient.",
+    "No moon or stars visible despite clear night conditions implied by time and weather.",
+    "Lake surface lacks moon reflection if moon were present \u2014 inconsistent with clear night rules.",
+    "Petal fall appears static \u2014 no motion blur or directional drift suggesting breeze.",
+    "Stone lanterns on walkway are unlit while hanging lantern glows \u2014 inconsistent lighting logic."
+   ],
+   "verdict": "revise",
+   "id": 3,
+   "season": "spring",
+   "weather": "clear",
+   "when": "2026-04-15 19:10",
+   "seconds": 9.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Top-right cherry blossoms and falling petals violate Chicago winter rule (Dec\u2013Feb) \u2014 should be bare branches.",
+    "Snow on Mount Fuji contradicts Chicago snow depth rule \u2014 no ground snow in Chicago means no snow anywhere.",
+    "Lanterns lit at 22:00 Chicago time is correct, but sky too clear/starry for winter night \u2014 should be overcast or moon-glow only.",
+    "Lake reflection of moon absent despite clear night \u2014 violates \u2018moon reflection on lake\u2019 rule.",
+    "Stone walkway lacks frost or snow despite sub-zero Chicago winter \u2014 should show frost or bare stone.",
+    "Distant town lights too bright and sharp \u2014 low visibility haze expected in winter clear nights per realism rules."
+   ],
+   "verdict": "revise",
+   "id": 4,
+   "season": "spring",
+   "weather": "clear",
+   "when": "2026-04-15 22:00",
+   "seconds": 10.3
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 2,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during 1:00 PM daylight; they should be off.",
+    "Sky is overcast grey instead of bright spring daylight.",
+    "Shadows are missing or inconsistent with the sun position.",
+    "Rain streaks are uniform and lack depth/blur variation.",
+    "Petal fall is static; lacks wind-blown motion or direction.",
+    "Lake surface lacks realistic rain ripples and reflections."
+   ],
+   "verdict": "reject",
+   "id": 5,
+   "season": "spring",
+   "weather": "rain",
+   "when": "2026-04-15 13:00",
+   "seconds": 8.9
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 4,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 5
+   },
+   "defects": [
+    "Lake surface is too calm; storm conditions require choppy water and ripples.",
+    "Lightning is too thin and faint; a storm requires a massive, bright bolt.",
+    "Pavilion lanterns are glowing too brightly; storm weather should dim ambient light.",
+    "Petal distribution is too uniform; storm wind should scatter them chaotically.",
+    "Mountain visibility is too high; storm haze should obscure the peak."
+   ],
+   "verdict": "revise",
+   "id": 6,
+   "season": "spring",
+   "weather": "storm",
+   "when": "2026-04-15 21:00",
+   "seconds": 8.8
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 2,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during 7:00 AM daylight; they should be off.",
+    "Sky is too bright for foggy dawn; lacks horizon glow.",
+    "No sun shadows despite daytime; lighting is flat and inconsistent.",
+    "Blossoms are fully open in April; correct, but petals don\u2019t fall visibly.",
+    "Mountain is hidden by fog \u2014 correct, but far shore isn\u2019t faded enough.",
+    "Walkway stones lack wetness or texture variation; looks too clean for fog."
+   ],
+   "verdict": "revise",
+   "id": 7,
+   "season": "spring",
+   "weather": "fog",
+   "when": "2026-04-15 07:00",
+   "seconds": 9.4
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Hanging lantern on the right is lit during midday; it should be off.",
+    "Lanterns in the town and on the walkway are lit during the day.",
+    "Windows in the pavilion and town buildings are glowing with light in daylight.",
+    "Shadows are too soft and diffuse for a clear, high-noon sun.",
+    "Lanterns hanging from the pavilion eaves are glowing despite being daytime."
+   ],
+   "verdict": "reject",
+   "id": 8,
+   "season": "summer",
+   "weather": "clear",
+   "when": "2026-07-15 13:00",
+   "seconds": 9.3
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns and windows are lit, but the sky is bright blue daylight; lights should be off.",
+    "Time is 19:50 (sunset/dusk), but the sky lacks the required horizon glow.",
+    "Tree branch in top-right has flat, cartoonish green leaves; lacks depth and lighting integration.",
+    "Stone walkway is dry; evening light should imply moisture or at least shadow consistency.",
+    "Mountain and far shore are too sharp; atmospheric haze is missing for evening depth.",
+    "Fireflies are absent; summer night/dusk requires fireflies per realism rules."
+   ],
+   "verdict": "reject",
+   "id": 9,
+   "season": "summer",
+   "weather": "partly_cloudy",
+   "when": "2026-07-15 19:50",
+   "seconds": 10.0
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Top-right branch has lush green leaves \u2014 violates summer rule (no petals, but leaves are correct); however, fireflies missing at night.",
+    "Lanterns glowing brightly \u2014 correct for 22:30 Chicago time, but no moon or stars visible despite clear night requirement.",
+    "Lake surface lacks moon reflection \u2014 contradicts \u2018clear night\u2019 rule even though sky is starry and moonless.",
+    "Stone walkway appears dry \u2014 should show subtle wetness or firefly glows if summer night; no ambient glow from lanterns on path.",
+    "Mountain silhouette too sharp \u2014 under clear night, atmospheric haze should soften distant peaks slightly; currently looks digitally pasted.",
+    "No fireflies in air or near foliage \u2014 mandatory for summer night scene per realism rules; critical omission."
+   ],
+   "verdict": "revise",
+   "id": 10,
+   "season": "summer",
+   "weather": "clear",
+   "when": "2026-07-15 22:30",
+   "seconds": 11.1
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during 4:00 PM daylight; they should be off.",
+    "Sky is too dark for 4:00 PM; should be overcast daylight, not night.",
+    "Lightning is present but no rain streaks or wet surfaces visible.",
+    "Leaves are static; storm should show wind-blown motion.",
+    "Lake surface is calm; storm should show choppy water.",
+    "No mist or haze on mountain despite storm conditions."
+   ],
+   "verdict": "reject",
+   "id": 11,
+   "season": "summer",
+   "weather": "storm",
+   "when": "2026-07-15 16:00",
+   "seconds": 9.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 4,
+    "structure_not_recolour": 5,
+    "light_consistency": 5,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 5
+   },
+   "defects": [
+    "Lake surface: Rain streaks are too uniform and lack the chaotic ripples expected in a heavy downpour."
+   ],
+   "verdict": "accept",
+   "id": 12,
+   "season": "summer",
+   "weather": "rain",
+   "when": "2026-07-15 22:00",
+   "seconds": 7.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during bright daylight (09:00 Chicago time), violating realism rules.",
+    "Moon is visible in the sky during the day, which is physically incorrect for this time.",
+    "Sun is positioned too low on the horizon for 9:00 AM, creating incorrect shadow angles.",
+    "Lake surface is perfectly still and glass-like, lacking realistic ripples or movement.",
+    "Falling leaves appear to float in mid-air without gravity or wind direction.",
+    "Tree branch in top-right has unnaturally sharp, cut-out edges against the sky."
+   ],
+   "verdict": "reject",
+   "id": 13,
+   "season": "autumn",
+   "weather": "clear",
+   "when": "2026-10-14 09:00",
+   "seconds": 10.1
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lanterns lit during daylight (17:45 Chicago time in October still has sun) \u2014 should be off or dim.",
+    "Moon visible in daytime sky \u2014 unrealistic for 17:45; moon should be below horizon or faint if present.",
+    "No autumn leaf litter on stone walkway despite heavy foliage above \u2014 breaks seasonal realism.",
+    "Lake surface too calm and reflective for late afternoon wind; lacks subtle ripples from breeze.",
+    "Pagoda windows glow unnaturally bright against daylight \u2014 interior lights shouldn\u2019t be on yet.",
+    "Tree branch top-right has perfect symmetry and uniform color \u2014 looks AI-generated, not hand-painted."
+   ],
+   "verdict": "revise",
+   "id": 14,
+   "season": "autumn",
+   "weather": "partly_cloudy",
+   "when": "2026-10-14 17:45",
+   "seconds": 10.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 4,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Top-right branch: leaves are too vibrant and dense for late October; should be sparser with more brown/orange tones.",
+    "Walkway: stone surface is dry and matte; lantern light should cast warm pools and reflections on wet autumn stones.",
+    "Lake: no moon reflection despite clear night sky; violates realism rule for clear night conditions.",
+    "Mountain: too sharp and detailed; should have atmospheric haze or mist for night distance realism.",
+    "Lanterns: all lit uniformly; some should be off or dimmer to suggest human presence variation.",
+    "Sky: stars are too numerous and bright; should be fewer and fainter for realistic night sky."
+   ],
+   "verdict": "revise",
+   "id": 15,
+   "season": "autumn",
+   "weather": "clear",
+   "when": "2026-10-14 22:00",
+   "seconds": 10.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lake surface: Rain streaks are too uniform and lack ripples; looks like static texture rather than active rain.",
+    "Walkway: Puddles are too perfect and mirror-like; rain should create chaotic, broken reflections on wet stone.",
+    "Sky: Clouds are too dark and storm-like for 18:20 (dusk); should show horizon glow, not pitch black.",
+    "Mountain: Visibility is too high; mist/fog should obscure the base of the volcano in rainy conditions.",
+    "Lanterns: Light halos are too sharp; rain and mist should diffuse the glow into soft, blurry orbs.",
+    "Leaves: Falling leaves are too sparse and static; autumn rain should show more motion blur and density."
+   ],
+   "verdict": "revise",
+   "id": 16,
+   "season": "autumn",
+   "weather": "rain",
+   "when": "2026-10-14 18:20",
+   "seconds": 10.9
+  },
+  {
+   "scores": {
+    "style_match": 4,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 4,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lanterns are lit during daytime (13:00 Chicago time) \u2014 should be off.",
+    "No fog halos around lights despite foggy weather condition.",
+    "Autumn leaves too vibrant and dense for late October; lacks leaf litter on path.",
+    "Stone walkway lacks wetness or texture variation expected in foggy conditions.",
+    "Mountain and far shore not sufficiently faded \u2014 fog depth inconsistent.",
+    "Tree branch top-right has overly sharp edges, looks pasted rather than integrated."
+   ],
+   "verdict": "revise",
+   "id": 17,
+   "season": "autumn",
+   "weather": "fog",
+   "when": "2026-10-14 13:00",
+   "seconds": 9.7
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit during bright daylight (13:00 Chicago time).",
+    "Snow on ground despite Chicago having 0 cm snow depth in Nov.",
+    "Rust leaves on trees contradict bare winter state for Nov 20.",
+    "No footprints or trodden path on snow-covered walkway.",
+    "Lantern light pools on snow but lanterns shouldn\u2019t be on.",
+    "Mountain visibility too clear for heavy snowfall/low visibility conditions."
+   ],
+   "verdict": "reject",
+   "id": 18,
+   "season": "autumnlate",
+   "weather": "snow",
+   "when": "2026-11-20 13:00",
+   "seconds": 9.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 1,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 1
+   },
+   "defects": [
+    "Lanterns are lit during bright daylight (13:00 Chicago time).",
+    "Moon is visible in a bright blue daytime sky.",
+    "Snow depth is incorrect for Chicago in January (should be bare ground).",
+    "Tree branches in top-right have snow despite no ground snow.",
+    "No shadows cast by buildings or pagoda under direct sun.",
+    "Hanging lantern appears to float without visible support."
+   ],
+   "verdict": "reject",
+   "id": 19,
+   "season": "winter",
+   "weather": "clear",
+   "when": "2026-01-15 13:00",
+   "seconds": 9.2
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 3,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Lanterns and windows are lit despite it being late afternoon (16:45) in January; they should be off.",
+    "Snow cover is present on the ground, but Chicago typically has no snow on Jan 15 (0 cm depth).",
+    "Sky is clear with a sunset gradient, but lanterns should not be glowing in daylight.",
+    "Tree branch in top-right has snow on it, but no snow is falling or accumulating in the air.",
+    "Stone walkway has no footprints or drifts despite heavy snow cover and lanterns.",
+    "Mountain and far shore are too sharp; low visibility haze is missing for snowy conditions."
+   ],
+   "verdict": "revise",
+   "id": 20,
+   "season": "winter",
+   "weather": "clear",
+   "when": "2026-01-15 16:45",
+   "seconds": 10.5
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 1,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Ground snow cover violates realism rules: Chicago on 2026-01-15 has no snow depth \u22652cm, yet snow blankets every surface.",
+    "Stars visible in clear night sky contradict snowing condition \u2014 snowing implies overcast, no stars, moon only as glow.",
+    "Lanterns glowing warmly on snow but no footprints or trodden path \u2014 breaks 'fresh thick snow' realism rule.",
+    "Mountain and far shore too sharp \u2014 snowing requires low visibility haze, not crisp detail under falling flakes.",
+    "Tree branch top-right has snow but no bare dormancy \u2014 winter rule demands bare dark branches, no leaves/petals (satisfied), but snow on branch contradicts 'no snow unless ground depth \u22652cm'.",
+    "Lake reflects city lights but no moon reflection \u2014 clear night should show moon reflection if moon is visible; here moon is absent despite stars."
+   ],
+   "verdict": "reject",
+   "id": 21,
+   "season": "winter",
+   "weather": "clear",
+   "when": "2026-01-15 22:00",
+   "seconds": 11.7
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 4,
+    "edges_artifacts": 5,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 3
+   },
+   "defects": [
+    "Ground snow cover violates realism rules: Chicago on 2026-01-15 has 0 cm snow depth, yet snow is depicted everywhere.",
+    "Sky is too clear: heavy snowfall should obscure stars and create a hazy, overcast atmosphere, not a dark starry void.",
+    "Lake surface is too calm: heavy snow and wind should create ripples or choppy water, not a glassy reflection.",
+    "Mountain visibility is too high: heavy snow and low visibility conditions should obscure the distant volcano, not reveal it clearly.",
+    "Lantern light is too sharp: heavy snow should diffuse light, creating soft halos rather than distinct, crisp beams.",
+    "Tree branches are too detailed: heavy snowfall should reduce contrast and detail, making distant branches appear softer and less defined."
+   ],
+   "verdict": "revise",
+   "id": 22,
+   "season": "winter",
+   "weather": "snow",
+   "when": "2026-01-15 22:00",
+   "seconds": 11.2
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 2,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns are lit in broad daylight (11:00 AM), violating the daytime rule.",
+    "Ground is completely bare and snow-free, ignoring the 'snow on the ground' rule for Jan 15.",
+    "Tree branches in top-right are bare, but foliage on the hillside right is lush green.",
+    "Lake surface is perfectly flat and glassy, lacking realistic texture for a winter day.",
+    "Distant mountain and shore are too sharp and clear for an overcast winter day.",
+    "Stone lanterns on the walkway are unlit, inconsistent with the lit hanging lantern."
+   ],
+   "verdict": "reject",
+   "id": 23,
+   "season": "winterbare",
+   "weather": "overcast",
+   "when": "2026-01-15 11:00",
+   "seconds": 10.1
+  },
+  {
+   "scores": {
+    "style_match": 5,
+    "composition_intact": 5,
+    "realism_rules": 2,
+    "structure_not_recolour": 5,
+    "light_consistency": 2,
+    "edges_artifacts": 4,
+    "depth_scale": 5,
+    "would_set_as_wallpaper": 2
+   },
+   "defects": [
+    "Lanterns and windows are lit despite it being 08:00 AM (daytime).",
+    "Snow depth is unrealistic for Chicago in January (typically 0 cm).",
+    "Tree branches in the top right are bare, but the scene depicts heavy snowfall.",
+    "Lantern light creates warm pools on snow, but the sky is overcast (no sun).",
+    "Fog is present, but visibility is too high for a 'hidden mountain' condition.",
+    "Snow on the ground is too smooth and lacks footprints or drifts."
+   ],
+   "verdict": "reject",
+   "id": 24,
+   "season": "winter",
+   "weather": "fog",
+   "when": "2026-01-15 08:00",
+   "seconds": 9.8
+  }
+ ]
+}

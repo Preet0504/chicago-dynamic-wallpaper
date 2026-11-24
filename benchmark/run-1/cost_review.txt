@@ -1,0 +1,3 @@
+a68e4c9f2ebb6b479    Score baseline benchmark run 1         msgs   10  in       20  out    12275  cache_r     439618  cache_w     91652  $   0.40  claude-sonnet-5-5
+acc6e3db057cb8e0c    Realism review of baseline run 1       msgs   15  in       30  out    21382  cache_r     837926  cache_w    113079  $   1.16  claude-opus-5-5
+TOTAL $1.56

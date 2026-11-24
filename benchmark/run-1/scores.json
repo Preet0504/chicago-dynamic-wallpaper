@@ -1,0 +1,413 @@
+{
+  "run": 1,
+  "items": [
+    {
+      "id": 1,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 06:05",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Dawn, lanterns on, sky glow, blossoms pink and intact. Slight ghost halo around hanging lantern."
+    },
+    {
+      "id": 2,
+      "season": "spring",
+      "weather": "partly_cloudy",
+      "when": "2026-04-15 13:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 3,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Blossoms bleached white/grey on the branch; unlit lanterns are ghostly translucent boxes with mist smudges; lake streak reflections blocky/vertical in daytime."
+    },
+    {
+      "id": 3,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 19:10",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 2,
+        "structure_not_recolour": 4,
+        "light_consistency": 2,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Sun 3 deg (dusk) but lanterns and windows are OFF, pagoda dark; warm sky glow fine. Violates dusk-lanterns-on rule. Ghost lantern boxes."
+    },
+    {
+      "id": 4,
+      "season": "spring",
+      "weather": "clear",
+      "when": "2026-04-15 22:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Stars plus painted cloud layer render as clumped white scribble streaks across the sky; moon not visible yet a moon reflection patch sits on the lake (inconsistent). Lanterns/lake lights good."
+    },
+    {
+      "id": 5,
+      "season": "spring",
+      "weather": "rain",
+      "when": "2026-04-15 13:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Grey low cloud, streaks, wet path with lantern-less puddles, mountain misted. Blossoms still bleached white, unlit lanterns ghostly, lake looks like speckle noise."
+    },
+    {
+      "id": 6,
+      "season": "spring",
+      "weather": "storm",
+      "when": "2026-04-15 21:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Dramatic: dark sky, lightning, petals blown, wet path reflecting lanterns. Lake choppy texture is a scale-like repeating pattern; lightning ends abruptly at the mountain."
+    },
+    {
+      "id": 7,
+      "season": "spring",
+      "weather": "fog",
+      "when": "2026-04-15 07:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 5,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Mountain hidden, far shore faded, nice depth. Fog is a flat grey wash; sky featureless; lanterns ghostly."
+    },
+    {
+      "id": 8,
+      "season": "summer",
+      "weather": "clear",
+      "when": "2026-07-15 13:00",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 5,
+        "realism_rules": 2,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Only the top-right branch was recoloured: jagged crystalline green leaf polygons, off-style. Shrubs/trees still pink blossoms and white petals fall: violates summer rules. Unlit lanterns ghostly."
+    },
+    {
+      "id": 9,
+      "season": "summer",
+      "weather": "partly_cloudy",
+      "when": "2026-07-15 19:50",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 5,
+        "realism_rules": 2,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Golden-hour sky and clouds lovely, but same unfinished summer: polygon leaves, pink blossoms everywhere, petals. Lanterns off at sun 4.8."
+    },
+    {
+      "id": 10,
+      "season": "summer",
+      "weather": "clear",
+      "when": "2026-07-15 22:30",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 2,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "No fireflies; shrubs still purple blossoms; polygon leaf branch; star/cloud scribble artifacts; no moon but lake lights fine."
+    },
+    {
+      "id": 11,
+      "season": "summer",
+      "weather": "storm",
+      "when": "2026-07-15 16:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 3,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Storm drama works (lightning, blown green leaves, wet path), but pink blossoms remain on shrubs, polygon leaves, choppy scale-pattern lake."
+    },
+    {
+      "id": 12,
+      "season": "summer",
+      "weather": "rain",
+      "when": "2026-07-15 22:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 5,
+        "realism_rules": 3,
+        "structure_not_recolour": 3,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Light rain at night, wet path reflections nice, mountain cloud band has a hard horizontal edge; blossoms still pink; no fireflies."
+    },
+    {
+      "id": 13,
+      "season": "autumn",
+      "weather": "clear",
+      "when": "2026-10-14 09:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 5,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Gorgeous painted autumn. Template composition differs slightly from spring (pagoda shape/tiers, mountain size, pavilion scale). Sun disc sits right behind pagoda spire; smudgy ghost reflections on lake edge; ghost lantern."
+    },
+    {
+      "id": 14,
+      "season": "autumn",
+      "weather": "partly_cloudy",
+      "when": "2026-10-14 17:45",
+      "scores": {
+        "style_match": 5,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 5,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Best frame: golden light, crescent moon, painted leaves. Lanterns off at sun 3.8; vertical ghost smudges on lake."
+    },
+    {
+      "id": 15,
+      "season": "autumn",
+      "weather": "clear",
+      "when": "2026-10-14 22:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 4,
+        "realism_rules": 3,
+        "structure_not_recolour": 4,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Leaves dark/orange speckle ok, lanterns on; but lake reflections are blocky glyph-like orange rectangles (previously rejected), star/cloud scribbles, no moon."
+    },
+    {
+      "id": 16,
+      "season": "autumn",
+      "weather": "rain",
+      "when": "2026-10-14 18:20",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 3,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 4
+      },
+      "notes": "Moody rain dusk, lanterns lit, wet path and lake reflections, mountain mist. Mountain cloud band slightly hard-edged; reflections a bit blocky."
+    },
+    {
+      "id": 17,
+      "season": "autumn",
+      "weather": "fog",
+      "when": "2026-10-14 13:00",
+      "scores": {
+        "style_match": 4,
+        "composition_intact": 4,
+        "realism_rules": 4,
+        "structure_not_recolour": 4,
+        "light_consistency": 4,
+        "edges_artifacts": 4,
+        "depth_scale": 4,
+        "would_set_as_wallpaper": 3
+      },
+      "notes": "Fog hides mountain, far shore faded, colour leaf accents survive. Flat grey fog; ghost lanterns; no halos (lights off)."
+    },
+    {
+      "id": 18,
+      "season": "autumn",
+      "weather": "snow",
+      "when": "2026-11-20 13:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 4,
+        "realism_rules": 1,
+        "structure_not_recolour": 2,
+        "light_consistency": 2,
+        "edges_artifacts": 3,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "No snow falling and no snow rules: flat grey-washed sky with stars and a big flat moon disc visible at 13:00; autumn leaves unchanged. Reads as broken."
+    },
+    {
+      "id": 19,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 13:00",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 3,
+        "realism_rules": 2,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 1,
+        "depth_scale": 2,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Snow is popcorn/cotton-ball blobs in blocky clumps; tree branch missing entirely (only stray dots top right); walkway a flat white sheet; railing buried; lake has vertical frost columns; pagoda spire solid black; unlit lanterns ghostly. Sun disc flat."
+    },
+    {
+      "id": 20,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 16:45",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 2,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Nice dusk sky and lit lanterns, but same popcorn snow, flat walkway sheet, missing branch, vertical frost columns on lake."
+    },
+    {
+      "id": 21,
+      "season": "winter",
+      "weather": "clear",
+      "when": "2026-01-15 22:00",
+      "scores": {
+        "style_match": 3,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 2,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Stars/cloud scribble artifacts, popcorn snow, flat walkway, no moon despite clear night, branch missing; lanterns warm and lit."
+    },
+    {
+      "id": 22,
+      "season": "winter",
+      "weather": "snow",
+      "when": "2026-01-15 22:00",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 3,
+        "realism_rules": 2,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 2,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "No falling snow at all (effect missing). Sky overly dark, faint ghost blossom branch outlines visible at top (violates no blossoms). Moon glow faint OK, no stars OK. Popcorn snow."
+    },
+    {
+      "id": 23,
+      "season": "winter",
+      "weather": "overcast",
+      "when": "2026-01-15 11:00",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 3,
+        "realism_rules": 1,
+        "structure_not_recolour": 1,
+        "light_consistency": 2,
+        "edges_artifacts": 2,
+        "depth_scale": 2,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Overcast daytime yet stars and moon disc are visible; branch shows as white flower-shaped blossoms (the rejected 'white flowers' look); popcorn snow. Fails overcast and winter rules."
+    },
+    {
+      "id": 24,
+      "season": "winter",
+      "weather": "fog",
+      "when": "2026-01-15 08:00",
+      "scores": {
+        "style_match": 2,
+        "composition_intact": 3,
+        "realism_rules": 3,
+        "structure_not_recolour": 2,
+        "light_consistency": 3,
+        "edges_artifacts": 2,
+        "depth_scale": 3,
+        "would_set_as_wallpaper": 2
+      },
+      "notes": "Fog reduces popcorn artifacts and hides mountain; walkway flat sepia sheet; sky flat; branch missing."
+    }
+  ]
+}
