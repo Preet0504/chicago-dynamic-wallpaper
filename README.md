@@ -11,6 +11,10 @@ paint the season templates and upscale them to 4K, and it runs offline on this M
 
 ## How an image is made
 
+Full workflow diagram (editable): [docs/workflow.excalidraw](docs/workflow.excalidraw) — open it at
+[excalidraw.com](https://excalidraw.com) (File → Open) or with the VS Code Excalidraw extension.
+Regenerate it with `python3 tools/make_diagram.py`.
+
 ```
 templates/<scene>.png (painted, 1672×941)        templates/4k/<scene>.png (AI-upscaled master)
         │                                                   │
@@ -122,7 +126,8 @@ Results so far (checker / realism critic, out of 5): baseline 3.16 / 2.0 → run
 | `render/season_*.py`, `render/align_autumn.py` | template generators |
 | `render/preview.py`, `render/benchmark.py` | previews and the benchmark matrix |
 | `templates/` | season templates, `_sky.png` exact sky masks, `4k/` masters, `ai/` saved AI outputs |
-| `tools/` | `critic.py`, `ai_region_edit.py`, `upscale_templates.sh`, `cost.py` |
+| `tools/` | `critic.py`, `ai_region_edit.py`, `upscale_templates.sh`, `cost.py`, `make_diagram.py` |
+| `docs/workflow.excalidraw` | the workflow diagram |
 | `setwallpaper.swift`, `install.sh` | sets the desktop picture on all displays; LaunchAgent installer |
 | `benchmark/` | every run's renders, scores, reviews, costs |
 
