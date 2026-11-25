@@ -12,9 +12,11 @@ on at dusk.
 - **You get a first wallpaper in about 4 minutes.** The rest of the year keeps building in the background (about
   25 minutes).
 
-Full system diagram (editable): [docs/architecture.excalidraw](docs/architecture.excalidraw). Open it at
-[excalidraw.com](https://excalidraw.com) or with the VS Code Excalidraw extension. There is also a preview:
-[docs/architecture.png](docs/architecture.png).
+![How wallgen works](docs/architecture.png)
+
+The picture above is [docs/architecture.png](docs/architecture.png). To edit it, open
+[docs/architecture.excalidraw](docs/architecture.excalidraw) at [excalidraw.com](https://excalidraw.com) or with the VS
+Code Excalidraw extension. Or change [tools/make_architecture.py](tools/make_architecture.py) and re-run it.
 
 ---
 
@@ -22,65 +24,65 @@ Full system diagram (editable): [docs/architecture.excalidraw](docs/architecture
 
 ```mermaid
 flowchart TD
-    U(["👤 You<br/>picture + place"]) --> W["🌐 Web app"]
+    U(["You: a picture + a place"]) --> W["Web app"]
     W --> P
 
-    subgraph P["② What changes?"]
+    subgraph P["Step 2: what can change?"]
         direction LR
-        A["🧩 Vision models<br/>+ 🧠 LLM"] --> AG{"Agree?"}
-        B["👁 Vision LLM"] --> AG
-        AG -- no --> TB["⚖ Tie-break"] --> UN["∪ Union"]
+        A["Checker A<br/>vision models + text model"] --> AG{"Lists agree?"}
+        B["Checker B<br/>vision-language model"] --> AG
+        AG -- no --> TB["Third model decides"] --> UN["Keep both lists"]
         AG -- yes --> UN
     end
 
-    UN --> CH{"Anything<br/>changes?"}
-    CH -- no --> MSG["💬 Nothing to animate"]
-    CH -- yes --> PL["🗓 Season plan<br/>from local climate"]
+    UN --> CH{"Anything<br/>can change?"}
+    CH -- no --> MSG["Stop: nothing to animate"]
+    CH -- yes --> PL["Step 3: seasons for this place<br/>from 3 years of local weather"]
 
-    PL --> FAST["⚡ Today's season<br/>first wallpaper ~4 min"]
-    PL --> BIG["🎨 Big work<br/>season templates"]
-    BIG --> PKG["📦 Scene package"]
-    PKG --> SMALL["💻 Small work<br/>renderer code"]
-    SMALL --> K["🔍 4K masters"]
-    K --> MAC["🖥 Your Mac<br/>renders every 30 min"]
+    PL --> FAST["Today's season first<br/>wallpaper in ~4 min"]
+    PL --> BIG["Step 4: paint every season<br/>day + night"]
+    BIG --> PKG["Scene package"]
+    PKG --> SMALL["Step 5: write the drawing program"]
+    SMALL --> K["Make 4K versions"]
+    K --> MAC["Step 6: your Mac redraws it<br/>every 30 min, no AI"]
     FAST --> MAC
 
-    BIG <-.-> R{{"🧑‍⚖️ Review"}}
+    BIG <-.-> R{{"Checking"}}
     SMALL <-.-> R
 ```
 
-| Stage | What happens | Local models |
+| Step | What happens | Local models |
 |---|---|---|
-| ① Upload | Web app or CLI. Every job is a folder `jobs/<id>/`, and every stage can be resumed after a crash. | – |
-| ② Perception | Two independent paths list the things that change with weather or time. **A:** segmentation, detection and depth models, then a language model reasons over the list. **B:** a vision LLM looks at the picture itself. The paths must agree (Jaccard ≥ 0.6). A third model settles disputes, and the union is kept. If nothing changes, you get a message instead. | Mask2Former, Grounding DINO, SAM, Depth Anything · qwen3:8b · qwen3.5:122b · inkling-2-mini |
-| ③ Season plan | The place is geocoded, and 3 years of daily climate are used to split the year into visual phases for *that* place. Snow appears only where it actually lies. | gpt-oss:120b |
-| ④ First wallpaper | Only today's season is built (2–3 image edits), with a quick review. It is rendered for "now" with live weather. | FLUX.2-klein, qwen3.5 |
-| ⑤ Big work | A day and a night template for every phase. Each one is lined up with the original, and its buildings and objects are locked to the original. Review loop A. | FLUX.2-klein |
-| ⑥ Small work | A code model writes `scene_renderer.py` against `scenekit`: sky, sun and moon, clouds, lamps, reflections, rain, fog and snow. It is checked against the real API, then rendered in a sandbox for 6 test moments. Review loop B. | gpt-oss:120b |
-| ⑦ Finalize | 4K masters (today's season first), a 24-hour preview strip and a report. | SeedVR2 |
+| 1. Upload | Web app or command line. Every job is a folder `jobs/<id>/`, and every step can be resumed after a crash. | – |
+| 2. Find what can change | Two independent checkers list the things that change with weather or time. **A:** segmentation, detection and depth models, then a text model decides which objects react. **B:** a vision-language model looks at the picture itself. The lists must agree (Jaccard ≥ 0.6). A third model settles disagreements, and both lists are kept. If nothing changes, you get a message instead. | Mask2Former, Grounding DINO, SAM, Depth Anything · qwen3:8b · qwen3.5:122b · inkling-2-mini |
+| 3. Seasons for this place | The place is looked up, and 3 years of daily weather are used to split the year into the looks *that* place has. Snow appears only on days it actually lies. | gpt-oss:120b |
+| 4. Paint every season | A day and a night picture for every season. Each one is lined up with the original, and the original's buildings are put back so nothing moves. **Today's season is painted first**, so a first wallpaper (rendered for "now" with live weather) is ready in about 4 minutes. | FLUX.2-klein |
+| 5. Write the drawing program | A coding model writes `scene_renderer.py` against `scenekit`: sky, sun and moon, clouds, lamps, reflections, rain, fog and snow. It is checked against the real API, then test-drawn in a sandbox for 6 moments. Then the season pictures are upscaled to 4K, and a 24-hour preview strip and a report are made. | gpt-oss:120b · SeedVR2 |
+| 6. On your Mac | Every 30 minutes and on wake, the program draws the wallpaper for the real time and weather (about 1 s, no AI) and sets it on every desktop. | – |
+| Checking (steps 4 and 5) | See below. | qwen3.5:122b · inkling-2-mini |
 
-### Review: the part that decides quality
+### Checking: the part that decides quality
 
-Every template and every test frame goes through the same review. A quick screen can **only accept**. Anything doubtful
+Every season picture and every test drawing goes through the same checking. A quick screen can **only accept**. Anything doubtful
 goes to the full panel, and only the panel can fail an image.
 
 ```mermaid
 flowchart LR
-    IMG["🖼 Candidate"] --> CHK["🤖 Automatic checks<br/>edges kept · brightness · lamps · banding"]
-    CHK --> SCR["⚡ Quick screen<br/>1 model · ~7 s"]
-    SCR --> G{"Clearly good?"}
-    G -- yes --> OK(["✅ Accept"])
-    G -- no --> PAN
+    IMG["New picture"] --> CHK["Automatic checks<br/>buildings moved? too dark? lamps? banding?"]
+    CHK --> SCR["Quick check<br/>1 model, ~7 s"]
+    SCR --> G{"Clearly fine?"}
+    G -- yes --> OK(["Accept"])
+    G -- "no, or not sure" --> PAN
 
-    subgraph PAN["👥 Full panel · in parallel"]
-        M1["qwen3.5"]
-        M2["inkling-2-mini"]
+    subgraph PAN["Full panel, both at once"]
+        M1["Judge 1: qwen3.5"]
+        M2["Judge 2: inkling-2-mini"]
     end
 
-    PAN --> MRG["∪ Merge issues<br/>confirmed = 2 models, or model + check"]
-    MRG --> RT{"Who fixes it?"}
-    RT -- "season · composition · invented objects" --> IM["🎨 Image model regenerates"]
-    RT -- "sky · sun/moon · reflections · brightness" --> CD["💻 Code model revises"]
+    PAN --> MRG["Count only agreed problems<br/>2 judges, or a judge + an automatic check"]
+    MRG --> RT{"Who can fix it?"}
+    RT -- "wrong season, invented or moved objects" --> IM["Image model paints it again"]
+    RT -- "sky, sun/moon, reflections, brightness" --> CD["Coding model fixes the program"]
 ```
 
 Loops stop when an image passes (mean ≥ 3.6/5, no metric below 2.5, no confirmed severity-3 issue), when a round
@@ -95,7 +97,7 @@ sequenceDiagram
     You->>App: picture + place
     Note over App: perception + season plan (~2.5 min)
     App->>App: today's season, 2–3 edits + quick review
-    App-->>You: 🖼 first wallpaper (~4 min)
+    App-->>You: first wallpaper (~4 min)
     Note over App: background: other seasons, renderer code, 4K
     App-->>You: full year ready (~25 min), swapped in automatically
 ```
