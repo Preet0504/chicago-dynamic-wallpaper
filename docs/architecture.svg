@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-190 -150 3110 2090" width="3110" height="2090">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>
+<rect x="-190" y="-150" width="3110" height="2090" fill="#ffffff"/>
+<style>text{font-family:"Comic Sans MS","Segoe Print","Chalkboard SE",sans-serif}</style>
+<rect x="0" y="0" width="660" height="540" rx="14" stroke="#868e96" stroke-width="1" fill="#ebfbee" stroke-dasharray="8 6"/>
+<ellipse cx="120" cy="135" rx="80" ry="45" stroke="#1e1e1e" stroke-width="2" fill="#d3f9d8"/>
+<rect x="250" y="90" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d3f9d8"/>
+<rect x="460" y="90" width="160" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="250" y="300" width="170" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d3f9d8"/>
+<rect x="460" y="300" width="160" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<polyline points="200,135 250,135" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="420,135 460,135" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="540,180 540,300" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="460,350 420,350" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)" stroke-dasharray="8 6"/>
+<rect x="720" y="0" width="1340" height="540" rx="14" stroke="#868e96" stroke-width="1" fill="#e7f5ff" stroke-dasharray="8 6"/>
+<rect x="750" y="70" width="500" height="140" rx="14" stroke="#495057" stroke-width="1" fill="none" stroke-dasharray="8 6"/>
+<rect x="765" y="100" width="150" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="930" y="100" width="150" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="1095" y="100" width="140" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="1290" y="95" width="160" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="1000" y="290" width="190" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<polygon points="1550,150 1630,220 1550,290 1470,220" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="1475" y="380" width="150" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="1660" y="175" width="150" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<polygon points="1940,150 2030,220 1940,290 1850,220" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="1855" y="400" width="170" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffc9c9"/>
+<polyline points="620,135 750,140" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="620,135 705,135 705,340 1000,340" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1250,140 1290,145" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1450,145 1550,145 1550,150" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1190,340 1550,340 1550,290" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1630,220 1660,220" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1630,220 1645,220 1645,425 1625,425" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1550,380 1550,360 1735,360 1735,265" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1810,220 1850,220" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1940,290 1940,400" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<rect x="2120" y="0" width="760" height="540" rx="14" stroke="#868e96" stroke-width="1" fill="#f8f9fa" stroke-dasharray="8 6"/>
+<rect x="2160" y="90" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="2160" y="260" width="170" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="2390" y="170" width="190" height="110" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="2625" y="60" width="230" height="410" rx="14" stroke="#495057" stroke-width="1" fill="none" stroke-dasharray="8 6"/>
+<rect x="2645" y="95" width="190" height="56" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffdeeb"/>
+<rect x="2645" y="167" width="190" height="56" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d3f9d8"/>
+<rect x="2645" y="239" width="190" height="56" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="2645" y="311" width="190" height="56" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e7f5ff"/>
+<rect x="2645" y="383" width="190" height="56" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#f1f3f5"/>
+<polyline points="2030,220 2090,220 2090,135 2160,135" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2245,180 2245,260" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2330,310 2360,310 2360,225 2390,225" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2580,225 2625,265" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<rect x="0" y="620" width="660" height="560" rx="14" stroke="#868e96" stroke-width="1" fill="#ebfbee" stroke-dasharray="8 6"/>
+<rect x="400" y="700" width="230" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="400" y="810" width="230" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="400" y="920" width="230" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<ellipse cx="170" cy="950" rx="130" ry="70" stroke="#1e1e1e" stroke-width="2" fill="#ffd8a8"/>
+<rect x="40" y="1065" width="590" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff" stroke-dasharray="8 6"/>
+<polyline points="2740,470 2740,585 515,585 515,700" stroke="#e8590c" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+<polyline points="515,780 515,810" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="515,890 515,920" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="400,960 350,960 350,950 300,950" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="40,950 -30,950 -30,350 250,350" stroke="#2b8a3e" stroke-width="2" fill="none" marker-end="url(#ah)" stroke-dasharray="8 6"/>
+<rect x="720" y="620" width="1340" height="560" rx="14" stroke="#868e96" stroke-width="1" fill="#f3f0ff" stroke-dasharray="8 6"/>
+<rect x="770" y="720" width="180" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="990" y="720" width="160" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="1190" y="720" width="160" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="1390" y="720" width="150" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<polygon points="1655,700 1730,770 1655,840 1580,770" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="1806" y="746" width="200" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#b2f2bb"/>
+<rect x="1798" y="738" width="200" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#b2f2bb"/>
+<rect x="1790" y="730" width="200" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#b2f2bb"/>
+<polyline points="950,770 990,770" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1150,770 1190,770" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1350,770 1390,770" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1540,770 1580,770" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1730,770 1790,775" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1655,840 1655,960 860,960 860,820" stroke="#7048e8" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<rect x="2120" y="620" width="760" height="560" rx="14" stroke="#868e96" stroke-width="1" fill="#fff9db" stroke-dasharray="8 6"/>
+<rect x="2150" y="730" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="2360" y="730" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<polygon points="2640,705 2715,775 2640,845 2565,775" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="2745" y="735" width="115" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#b2f2bb"/>
+<rect x="2340" y="885" width="380" height="125" rx="14" stroke="#495057" stroke-width="1" fill="none" stroke-dasharray="8 6"/>
+<rect x="2355" y="915" width="170" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="2535" y="915" width="170" height="80" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="2150" y="1060" width="190" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="2390" y="1060" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="2610" y="1040" width="240" height="55" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="2610" y="1105" width="240" height="55" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<polyline points="2320,775 2360,775" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2530,775 2565,775" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2715,775 2745,775" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2640,845 2530,885" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2340,947.5 2245,947 2245,1060" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2340,1105 2390,1105" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2560,1105 2585,1105 2585,1067 2610,1067.5" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2560,1105 2585,1105 2585,1132 2610,1132.5" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1465,720 1465,680 2235,680 2235,730" stroke="#e67700" stroke-width="2" fill="none" marker-end="url(#ah)" stroke-dasharray="8 6"/>
+<rect x="0" y="1240" width="2060" height="560" rx="14" stroke="#868e96" stroke-width="1" fill="#e7f5ff" stroke-dasharray="8 6"/>
+<rect x="40" y="1340" width="190" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="290" y="1340" width="180" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="530" y="1340" width="170" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="760" y="1340" width="170" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="760" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="789" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="818" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="847" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="876" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="905" y="1455" width="26" height="30" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffffff"/>
+<rect x="990" y="1340" width="150" height="100" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<polygon points="1255,1320 1330,1390 1255,1460 1180,1390" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="1390" y="1345" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#b2f2bb"/>
+<rect x="1610" y="1345" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<ellipse cx="1925" cy="1390" rx="95" ry="60" stroke="#1e1e1e" stroke-width="2" fill="#ffd8a8"/>
+<polyline points="1890,820 1890,1205 -30,1205 -30,1390 40,1390" stroke="#2b8a3e" stroke-width="3" fill="none" marker-end="url(#ah)"/>
+<polyline points="230,1390 290,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="470,1390 530,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="615,1340 615,1295 380,1295 380,1340" stroke="#c92a2a" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="700,1390 760,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="930,1390 990,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1140,1390 1180,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1330,1390 1390,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1255,1460 1255,1580 380,1580 380,1440" stroke="#1971c2" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1560,1390 1610,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1780,1390 1830,1390" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="1065,1340 1065,1222 2133,1222 2133,775 2150,775" stroke="#e67700" stroke-width="2" fill="none" marker-end="url(#ah)" stroke-dasharray="8 6"/>
+<rect x="2120" y="1240" width="760" height="560" rx="14" stroke="#868e96" stroke-width="1" fill="#ebfbee" stroke-dasharray="8 6"/>
+<rect x="2160" y="1340" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#c3fae8"/>
+<rect x="2380" y="1340" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#c3fae8"/>
+<rect x="2380" y="1480" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#c3fae8"/>
+<rect x="2600" y="1340" width="170" height="90" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#c3fae8"/>
+<ellipse cx="2300" cy="1690" rx="140" ry="60" stroke="#1e1e1e" stroke-width="2" fill="#ffd8a8"/>
+<polyline points="2020,1390 2160,1385" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2330,1385 2380,1385" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2550,1385 2600,1385" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2550,1525 2685,1525 2685,1430" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<polyline points="2770,1385 2850,1385 2850,1690 2440,1690" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<rect x="0" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#e5dbff"/>
+<rect x="300" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#d0ebff"/>
+<rect x="600" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#fff3bf"/>
+<rect x="900" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffe8cc"/>
+<rect x="1200" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#c3fae8"/>
+<rect x="1500" y="1850" width="270" height="50" rx="14" stroke="#1e1e1e" stroke-width="2" fill="#ffd8a8"/>
+<text x="0" y="-85" font-size="40" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">wallgen · any picture + a place → a living wallpaper</text>
+<text x="0" y="-43.75" font-size="18" fill="#495057" text-anchor="start" dominant-baseline="central">every model runs locally on the Mac · no cloud AI · the live wallpaper itself uses no AI</text>
+<text x="18" y="27" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">① Upload</text>
+<text x="120" y="124.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">👤</text>
+<text x="120" y="145.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">You</text>
+<text x="335" y="135" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌐 Web app</text>
+<text x="540" y="135" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📥 Job queue</text>
+<text x="335" y="339.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📊 Live</text>
+<text x="335" y="360.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">progress</text>
+<text x="540" y="339.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🗄 jobs/&lt;id&gt;</text>
+<text x="540" y="360.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">resumable</text>
+<text x="178" y="72.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">picture + place</text>
+<text x="738" y="27" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">② What changes with weather &amp; time?</text>
+<text x="760" y="84.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">path A · vision models</text>
+<text x="840" y="145" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🧩 Segment</text>
+<text x="1005" y="134.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎯 Detect</text>
+<text x="1005" y="155.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">+ mask</text>
+<text x="1165" y="145" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📏 Depth</text>
+<text x="1370" y="134.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🧠 LLM</text>
+<text x="1370" y="155.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">reasons</text>
+<text x="1095" y="329.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">👁 Vision LLM</text>
+<text x="1095" y="350.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">looks</text>
+<text x="780" y="333.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">path B</text>
+<text x="1550" y="220" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">Agree?</text>
+<text x="1550" y="425" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">⚖ Tie-break</text>
+<text x="1735" y="209.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">∪ Union</text>
+<text x="1735" y="230.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">+ masks</text>
+<text x="1940" y="210" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">Anything</text>
+<text x="1940" y="230" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">changes?</text>
+<text x="1940" y="439.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">💬 'Nothing</text>
+<text x="1940" y="460.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">to animate'</text>
+<text x="1628" y="200.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">yes</text>
+<text x="1652" y="308.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">no</text>
+<text x="1950" y="338.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">no</text>
+<text x="2138" y="27" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">③ Season plan</text>
+<text x="2245" y="124.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📍 Find the</text>
+<text x="2245" y="145.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">place</text>
+<text x="2245" y="299.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📊 3 years</text>
+<text x="2245" y="320.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">of weather</text>
+<text x="2485" y="214.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🗓 Planner</text>
+<text x="2485" y="235.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">LLM</text>
+<text x="2635" y="74.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">season phases</text>
+<text x="2740" y="123" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌸 spring</text>
+<text x="2740" y="195" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">☀️ summer</text>
+<text x="2740" y="267" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🍂 autumn</text>
+<text x="2740" y="339" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌨 winter</text>
+<text x="2740" y="411" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">⛄ snow on ground</text>
+<text x="2040" y="200.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">yes</text>
+<text x="18" y="647" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">④ First wallpaper, fast</text>
+<text x="515" y="729.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📅 Today's</text>
+<text x="515" y="750.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">season only</text>
+<text x="515" y="850" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎨 2-3 edits</text>
+<text x="515" y="960" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">⚡ Quick review</text>
+<text x="170" y="937.5" font-size="20" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🖼 Wallpaper</text>
+<text x="170" y="962.5" font-size="20" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">in ~4 min</text>
+<text x="335" y="1105" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">↻ rest of the year keeps building in the background</text>
+<text x="1250" y="566.75" font-size="14" fill="#e8590c" text-anchor="start" dominant-baseline="central">today first</text>
+<text x="-150" y="648.75" font-size="14" fill="#2b8a3e" text-anchor="start" dominant-baseline="central">shown + set</text>
+<text x="738" y="647" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">⑤ Big work · season templates</text>
+<text x="860" y="759.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎨 Image</text>
+<text x="860" y="780.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">model edits</text>
+<text x="1070" y="759.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📐 Line up</text>
+<text x="1070" y="780.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">with original</text>
+<text x="1270" y="759.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🔒 Keep</text>
+<text x="1270" y="780.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">buildings</text>
+<text x="1465" y="770" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🔎 Review</text>
+<text x="1655" y="770" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">Pass?</text>
+<text x="1890" y="764.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">✅ Templates</text>
+<text x="1890" y="785.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">day + night</text>
+<text x="1735" y="753.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">yes</text>
+<text x="1000" y="978.75" font-size="14" fill="#7048e8" text-anchor="start" dominant-baseline="central">no → retry with the reviewers' fixes</text>
+<text x="770" y="1069.38" font-size="15" fill="#495057" text-anchor="start" dominant-baseline="central">max 2 rounds · best attempt wins</text>
+<text x="2138" y="647" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">🧑‍⚖️ Review · both loops</text>
+<text x="2235" y="764.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🤖 Auto</text>
+<text x="2235" y="785.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">checks</text>
+<text x="2445" y="764.375" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">⚡ Quick</text>
+<text x="2445" y="785.625" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">screen</text>
+<text x="2640" y="765" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">Clearly</text>
+<text x="2640" y="785" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">good?</text>
+<text x="2802.5" y="775" font-size="24" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">✅</text>
+<text x="2350" y="899.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">full panel · in parallel</text>
+<text x="2440" y="955" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">👁 Model 1</text>
+<text x="2620" y="955" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">👁 Model 2</text>
+<text x="2245" y="1094.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">∪ Merge +</text>
+<text x="2245" y="1115.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">confirm</text>
+<text x="2475" y="1094.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🧭 Who</text>
+<text x="2475" y="1115.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">fixes it?</text>
+<text x="2730" y="1067.5" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎨 → image model</text>
+<text x="2730" y="1132.5" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">💻 → code model</text>
+<text x="2712" y="750.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">yes</text>
+<text x="2650" y="858.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">no</text>
+<text x="18" y="1267" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">⑥ Small work · renderer code</text>
+<text x="135" y="1379.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">📦 Scene</text>
+<text x="135" y="1400.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">package</text>
+<text x="380" y="1379.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">💻 Code</text>
+<text x="380" y="1400.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">model</text>
+<text x="615" y="1379.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🛡 Safety +</text>
+<text x="615" y="1400.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">API check</text>
+<text x="845" y="1379.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🧪 Sandbox</text>
+<text x="845" y="1400.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">render</text>
+<text x="773" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌙</text>
+<text x="802" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌅</text>
+<text x="831" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">☀️</text>
+<text x="860" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌧</text>
+<text x="889" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌫</text>
+<text x="918" y="1470" font-size="13" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">❄️</text>
+<text x="1065" y="1390" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🔎 Review</text>
+<text x="1255" y="1390" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">Pass?</text>
+<text x="1475" y="1390" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">✅ Renderer</text>
+<text x="1695" y="1379.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🔍 4K</text>
+<text x="1695" y="1400.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">upscale</text>
+<text x="1925" y="1390" font-size="20" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎁 Ready</text>
+<text x="455" y="1278.75" font-size="14" fill="#c92a2a" text-anchor="start" dominant-baseline="central">reject</text>
+<text x="1335" y="1358.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">yes</text>
+<text x="620" y="1598.75" font-size="14" fill="#1971c2" text-anchor="start" dominant-baseline="central">no → revise the code</text>
+<text x="40" y="1709.38" font-size="15" fill="#495057" text-anchor="start" dominant-baseline="central">the code runs with no network, a time limit and an import allow-list</text>
+<text x="2138" y="1267" font-size="24" fill="#1e1e1e" text-anchor="start" dominant-baseline="central">⑦ On your Mac · no AI</text>
+<text x="2245" y="1375" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">⏰ Every 30 min</text>
+<text x="2245" y="1395" font-size="16" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">+ on wake</text>
+<text x="2465" y="1374.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">☁️ Live</text>
+<text x="2465" y="1395.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">weather</text>
+<text x="2465" y="1514.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🌞🌙 Sun +</text>
+<text x="2465" y="1535.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">moon</text>
+<text x="2685" y="1374.38" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🎞 Render</text>
+<text x="2685" y="1395.62" font-size="17" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">~1 s</text>
+<text x="2300" y="1678.75" font-size="18" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">🖥 Every</text>
+<text x="2300" y="1701.25" font-size="18" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">desktop</text>
+<text x="2040" y="1358.75" font-size="14" fill="#495057" text-anchor="start" dominant-baseline="central">package</text>
+<text x="135" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">AI model (local)</text>
+<text x="435" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">vision / checks</text>
+<text x="735" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">review / decision</text>
+<text x="1035" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">data</text>
+<text x="1335" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">runs on your Mac</text>
+<text x="1635" y="1875" font-size="15" fill="#1e1e1e" text-anchor="middle" dominant-baseline="central">result</text>
+</svg>
