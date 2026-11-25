@@ -1,0 +1,12 @@
+# pipeline + web app (.venv-gen). Versions are the ones the Chicago test ran with.
+torch==2.15.0
+transformers==5.24.1
+accelerate==1.16.0
+safetensors==0.8.0
+numpy==2.5.5
+scipy==1.18.1
+pillow==13.0.0
+opencv-python-headless==5.1.0.95
+fastapi==0.165.0
+uvicorn==0.54.0
+python-multipart==0.0.34

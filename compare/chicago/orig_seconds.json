@@ -1,0 +1,122 @@
+{
+  "01_spring_clear": {
+    "id": "01_spring_clear",
+    "seconds": 3.01,
+    "sun_alt": -1.8
+  },
+  "02_spring_partly_cloudy": {
+    "id": "02_spring_partly_cloudy",
+    "seconds": 1.8,
+    "sun_alt": 58.0
+  },
+  "03_spring_clear": {
+    "id": "03_spring_clear",
+    "seconds": 1.96,
+    "sun_alt": 3.1
+  },
+  "04_spring_clear": {
+    "id": "04_spring_clear",
+    "seconds": 1.81,
+    "sun_alt": -25.0
+  },
+  "05_spring_rain": {
+    "id": "05_spring_rain",
+    "seconds": 2.94,
+    "sun_alt": 58.0
+  },
+  "06_spring_storm": {
+    "id": "06_spring_storm",
+    "seconds": 3.41,
+    "sun_alt": -16.0
+  },
+  "07_spring_fog": {
+    "id": "07_spring_fog",
+    "seconds": 2.6,
+    "sun_alt": 8.3
+  },
+  "08_summer_clear": {
+    "id": "08_summer_clear",
+    "seconds": 2.49,
+    "sun_alt": 69.5
+  },
+  "09_summer_partly_cloudy": {
+    "id": "09_summer_partly_cloudy",
+    "seconds": 2.03,
+    "sun_alt": 4.8
+  },
+  "10_summer_clear": {
+    "id": "10_summer_clear",
+    "seconds": 1.89,
+    "sun_alt": -18.2
+  },
+  "11_summer_storm": {
+    "id": "11_summer_storm",
+    "seconds": 3.86,
+    "sun_alt": 46.6
+  },
+  "12_summer_rain": {
+    "id": "12_summer_rain",
+    "seconds": 3.8,
+    "sun_alt": -14.7
+  },
+  "13_autumn_clear": {
+    "id": "13_autumn_clear",
+    "seconds": 2.97,
+    "sun_alt": 19.6
+  },
+  "14_autumn_partly_cloudy": {
+    "id": "14_autumn_partly_cloudy",
+    "seconds": 2.94,
+    "sun_alt": 3.8
+  },
+  "15_autumn_clear": {
+    "id": "15_autumn_clear",
+    "seconds": 1.44,
+    "sun_alt": -42.1
+  },
+  "16_autumn_rain": {
+    "id": "16_autumn_rain",
+    "seconds": 3.0,
+    "sun_alt": -2.6
+  },
+  "17_autumn_fog": {
+    "id": "17_autumn_fog",
+    "seconds": 1.87,
+    "sun_alt": 39.5
+  },
+  "18_autumnlate_snow": {
+    "id": "18_autumnlate_snow",
+    "seconds": 3.14,
+    "sun_alt": 25.3
+  },
+  "19_winter_clear": {
+    "id": "19_winter_clear",
+    "seconds": 2.4,
+    "sun_alt": 25.6
+  },
+  "20_winter_clear": {
+    "id": "20_winter_clear",
+    "seconds": 1.83,
+    "sun_alt": -0.9
+  },
+  "21_winter_clear": {
+    "id": "21_winter_clear",
+    "seconds": 1.44,
+    "sun_alt": -57.2
+  },
+  "22_winter_snow": {
+    "id": "22_winter_snow",
+    "seconds": 2.64,
+    "sun_alt": -57.2
+  },
+  "23_winterbare_overcast": {
+    "id": "23_winterbare_overcast",
+    "seconds": 2.21,
+    "sun_alt": 25.6
+  },
+  "24_winter_fog": {
+    "id": "24_winter_fog",
+    "seconds": 3.32,
+    "sun_alt": 6.2
+  }
+}

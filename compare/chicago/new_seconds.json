@@ -1,0 +1,194 @@
+{
+  "01_spring_clear": {
+    "id": "01_spring_clear",
+    "ok": true,
+    "seconds": 1.37,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/01_spring_clear.png",
+    "sun_alt": -1.8,
+    "phase": "early_spring_melt"
+  },
+  "02_spring_partly_cloudy": {
+    "id": "02_spring_partly_cloudy",
+    "ok": true,
+    "seconds": 0.93,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/02_spring_partly_cloudy.png",
+    "sun_alt": 58.0,
+    "phase": "early_spring_melt"
+  },
+  "03_spring_clear": {
+    "id": "03_spring_clear",
+    "ok": true,
+    "seconds": 1.08,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/03_spring_clear.png",
+    "sun_alt": 3.1,
+    "phase": "early_spring_melt"
+  },
+  "04_spring_clear": {
+    "id": "04_spring_clear",
+    "ok": true,
+    "seconds": 0.91,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/04_spring_clear.png",
+    "sun_alt": -25.0,
+    "phase": "early_spring_melt"
+  },
+  "05_spring_rain": {
+    "id": "05_spring_rain",
+    "ok": true,
+    "seconds": 1.48,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/05_spring_rain.png",
+    "sun_alt": 58.0,
+    "phase": "early_spring_melt"
+  },
+  "06_spring_storm": {
+    "id": "06_spring_storm",
+    "ok": true,
+    "seconds": 1.46,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/06_spring_storm.png",
+    "sun_alt": -16.0,
+    "phase": "early_spring_melt"
+  },
+  "07_spring_fog": {
+    "id": "07_spring_fog",
+    "ok": true,
+    "seconds": 1.35,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/07_spring_fog.png",
+    "sun_alt": 8.3,
+    "phase": "early_spring_melt"
+  },
+  "08_summer_clear": {
+    "id": "08_summer_clear",
+    "ok": true,
+    "seconds": 1.12,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/08_summer_clear.png",
+    "sun_alt": 69.6,
+    "phase": "summer_green"
+  },
+  "09_summer_partly_cloudy": {
+    "id": "09_summer_partly_cloudy",
+    "ok": true,
+    "seconds": 1.1,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/09_summer_partly_cloudy.png",
+    "sun_alt": 4.8,
+    "phase": "summer_green"
+  },
+  "10_summer_clear": {
+    "id": "10_summer_clear",
+    "ok": true,
+    "seconds": 0.9,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/10_summer_clear.png",
+    "sun_alt": -18.3,
+    "phase": "summer_green"
+  },
+  "11_summer_storm": {
+    "id": "11_summer_storm",
+    "ok": true,
+    "seconds": 1.37,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/11_summer_storm.png",
+    "sun_alt": 46.6,
+    "phase": "summer_green"
+  },
+  "12_summer_rain": {
+    "id": "12_summer_rain",
+    "ok": true,
+    "seconds": 1.45,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/12_summer_rain.png",
+    "sun_alt": -14.7,
+    "phase": "summer_green"
+  },
+  "13_autumn_clear": {
+    "id": "13_autumn_clear",
+    "ok": true,
+    "seconds": 1.11,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/13_autumn_clear.png",
+    "sun_alt": 19.6,
+    "phase": "autumn_transition"
+  },
+  "14_autumn_partly_cloudy": {
+    "id": "14_autumn_partly_cloudy",
+    "ok": true,
+    "seconds": 1.16,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/14_autumn_partly_cloudy.png",
+    "sun_alt": 3.8,
+    "phase": "autumn_transition"
+  },
+  "15_autumn_clear": {
+    "id": "15_autumn_clear",
+    "ok": true,
+    "seconds": 0.91,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/15_autumn_clear.png",
+    "sun_alt": -42.1,
+    "phase": "autumn_transition"
+  },
+  "16_autumn_rain": {
+    "id": "16_autumn_rain",
+    "ok": true,
+    "seconds": 1.57,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/16_autumn_rain.png",
+    "sun_alt": -2.6,
+    "phase": "autumn_transition"
+  },
+  "17_autumn_fog": {
+    "id": "17_autumn_fog",
+    "ok": true,
+    "seconds": 1.16,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/17_autumn_fog.png",
+    "sun_alt": 39.5,
+    "phase": "autumn_transition"
+  },
+  "18_autumnlate_snow": {
+    "id": "18_autumnlate_snow",
+    "ok": true,
+    "seconds": 1.51,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/18_autumnlate_snow.png",
+    "sun_alt": 25.4,
+    "phase": "autumn_peak"
+  },
+  "19_winter_clear": {
+    "id": "19_winter_clear",
+    "ok": true,
+    "seconds": 1.14,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/19_winter_clear.png",
+    "sun_alt": 25.6,
+    "phase": "snow"
+  },
+  "20_winter_clear": {
+    "id": "20_winter_clear",
+    "ok": true,
+    "seconds": 1.14,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/20_winter_clear.png",
+    "sun_alt": -0.9,
+    "phase": "snow"
+  },
+  "21_winter_clear": {
+    "id": "21_winter_clear",
+    "ok": true,
+    "seconds": 0.9,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/21_winter_clear.png",
+    "sun_alt": -57.2,
+    "phase": "snow"
+  },
+  "22_winter_snow": {
+    "id": "22_winter_snow",
+    "ok": true,
+    "seconds": 1.36,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/22_winter_snow.png",
+    "sun_alt": -57.2,
+    "phase": "snow"
+  },
+  "23_winterbare_overcast": {
+    "id": "23_winterbare_overcast",
+    "ok": true,
+    "seconds": 1.18,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/23_winterbare_overcast.png",
+    "sun_alt": 25.6,
+    "phase": "winter_dormant"
+  },
+  "24_winter_fog": {
+    "id": "24_winter_fog",
+    "ok": true,
+    "seconds": 1.4,
+    "file": "/Users/preetpatel/Documents/wallpapers/compare/chicago/generated/24_winter_fog.png",
+    "sun_alt": 6.2,
+    "phase": "snow"
+  }
+}

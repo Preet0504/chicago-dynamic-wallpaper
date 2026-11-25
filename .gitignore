@@ -12,3 +12,7 @@ render/cache_*.npz
 templates/ai/backup/
 # benchmark render images (scores, reviews, manifests and costs are kept)
 benchmark/**/*.png
+# generation pipeline: its own venv, job folders (large images), comparison renders
+.venv-gen/
+jobs/
+compare/**/*.png

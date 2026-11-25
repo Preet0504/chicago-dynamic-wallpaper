@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallpaper Generator</title>
+<style>
+  :root { --bg:#f6f5f2; --card:#fff; --ink:#1d1d1f; --mute:#6b6b70; --line:#e3e1dc; --accent:#2f5d8a;
+          --ok:#2e7d4f; --warn:#a86a12; --bad:#b3362c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151517; --card:#1f1f22; --ink:#ececee; --mute:#9a9aa2;
+          --line:#303035; --accent:#7fb0e0; --ok:#6cc08f; --warn:#e0a84e; --bad:#ef7a70; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  header { padding:20px 24px 8px; } h1 { font-size:20px; margin:0; } header p { margin:4px 0 0; color:var(--mute); }
+  main { display:grid; grid-template-columns: 300px 1fr; gap:16px; padding:12px 24px 40px; }
+  @media (max-width: 860px) { main { grid-template-columns:1fr; padding:12px 16px; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:16px; }
+  h2 { font-size:15px; margin:0 0 10px; } h3 { font-size:14px; margin:14px 0 6px; }
+  label { display:block; font-size:13px; color:var(--mute); margin:8px 0 4px; }
+  input, select, button { font:inherit; }
+  input[type=text], input[type=datetime-local], select, input[type=number] { width:100%; padding:7px 9px; border:1px solid var(--line);
+     border-radius:7px; background:var(--bg); color:var(--ink); }
+  button { margin-top:12px; padding:8px 14px; border:0; border-radius:7px; background:var(--accent); color:#fff; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .jobs a { display:block; padding:8px; border-radius:7px; color:inherit; text-decoration:none; border:1px solid transparent; }
+  .jobs a:hover, .jobs a.sel { border-color:var(--line); background:var(--bg); }
+  .badge { display:inline-block; font-size:12px; padding:1px 7px; border-radius:20px; border:1px solid currentColor; }
+  .done,.accepted,.PASS { color:var(--ok); } .running,.retry,.kept_best,.queued { color:var(--warn); }
+  .failed,.fail,.nothing_to_change { color:var(--bad); } .base { color:var(--mute); }
+  .stages { display:flex; flex-wrap:wrap; gap:8px; }
+  .ready { border:1px solid var(--line); border-radius:8px; padding:10px; margin-top:10px; }
+  .stage { flex:1 1 130px; border:1px solid var(--line); border-radius:8px; padding:8px; font-size:13px; }
+  pre { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:10px; max-height:260px;
+        overflow:auto; font-size:12px; white-space:pre-wrap; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:10px; }
+  .grid figure { margin:0; } .grid img { width:100%; border-radius:6px; display:block; border:1px solid var(--line); }
+  figcaption { font-size:12px; color:var(--mute); margin-top:3px; }
+  table { border-collapse:collapse; width:100%; font-size:13px; } td, th { text-align:left; padding:5px 6px;
+        border-bottom:1px solid var(--line); vertical-align:top; }
+  .wide img { width:100%; border-radius:8px; border:1px solid var(--line); }
+  .row { display:flex; gap:10px; flex-wrap:wrap; } .row > div { flex:1 1 140px; }
+  .mute { color:var(--mute); }
+</style>
+</head>
+<body>
+<header><h1>Wallpaper Generator</h1>
+<p>Upload a picture and a location. Local models find what changes with weather and time, paint the seasons, write the renderer, and review it.</p></header>
+<main>
+  <aside>
+    <div class="card">
+      <h2>New wallpaper</h2>
+      <form id="up">
+        <label for="img">Base image</label><input id="img" name="image" type="file" accept="image/*" required>
+        <label for="loc">Location</label><input id="loc" name="location" type="text" placeholder="Chicago, US  or  41.88,-87.63" required>
+        <button id="go" type="submit">Start</button>
+        <div id="upmsg" class="mute" style="margin-top:8px"></div>
+      </form>
+    </div>
+    <div class="card"><h2>Jobs</h2><div id="jobs" class="jobs mute">Loading…</div></div>
+  </aside>
+  <section id="detail"><div class="card mute">Pick a job or start a new one.</div></section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let current = null, timer = null;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const f = (p, v) => `/files/${current}/${p}?v=${v||""}`;
+
+$("#up").onsubmit = async e => {
+  e.preventDefault(); $("#go").disabled = true; $("#upmsg").textContent = "Uploading…";
+  try {
+    const r = await fetch("/api/jobs", {method:"POST", body:new FormData(e.target)});
+    const j = await r.json(); if (!r.ok) throw new Error(j.detail || r.statusText);
+    $("#upmsg").textContent = "Queued as " + j.id; open(j.id); loadJobs();
+  } catch (err) { $("#upmsg").textContent = "Error: " + err.message; }
+  $("#go").disabled = false;
+};
+
+async function loadJobs() {
+  const js = await (await fetch("/api/jobs")).json();
+  $("#jobs").innerHTML = js.length ? js.map(j => `<a href="#" data-id="${esc(j.id)}" class="${j.id===current?"sel":""}">
+     <b>${esc(j.id)}</b><br><span class="mute">${esc(j.location)}</span> <span class="badge ${esc(j.status)}">${esc(j.status)}</span></a>`).join("")
+     : "No jobs yet.";
+  document.querySelectorAll("#jobs a").forEach(a => a.onclick = e => { e.preventDefault(); open(a.dataset.id); });
+}
+
+function open(id) { current = id; loadJobs(); refresh(); clearInterval(timer); timer = setInterval(refresh, 5000); }
+
+async function refresh() {
+  if (!current) return;
+  const [d, lg] = await Promise.all([fetch(`/api/jobs/${current}`).then(r => r.json()),
+                                     fetch(`/api/jobs/${current}/log?tail=120`).then(r => r.json())]);
+  const m = d.meta, st = m.stages || {}, v = Date.now() >> 14;
+  const names = Object.assign({"01_perception":"Perception","02_plan":"Season plan"},
+                 m.mode === "fast" ? {"03_plates_preview":"Today's templates","04_package_preview":"First wallpaper"} : {},
+                 {"03_plates":"Templates (loop A)","04_package":"Package","05_renderer":"Renderer code (loop B)","06_finalize":"4K + report"});
+  let h = `<div class="card"><h2>${esc(d.id)} · ${esc(m.location)} <span class="badge ${esc(m.status)}">${esc(m.status)}</span></h2>
+    ${m.message ? `<p><b>${esc(m.message)}</b></p>` : ""}${m.error ? `<p class="failed">${esc(m.error)}</p>` : ""}
+    ${d.queue_position ? `<p class="mute">Queue position ${d.queue_position}</p>` : ""}
+    <div class="stages">${Object.entries(names).map(([k,n]) => { const s = st[k] || {};
+      return `<div class="stage"><b>${n}</b><br><span class="badge ${esc(s.status||"")}">${esc(s.status||"waiting")}</span>
+      ${s.seconds ? `<span class="mute"> ${Math.round(s.seconds)}s</span>` : ""}</div>`; }).join("")}</div>
+    ${m.status==="failed" ? `<button onclick="fetch('/api/jobs/${current}/resume',{method:'POST'}).then(refresh)">Resume</button>` : ""}
+    ${m.preview ? `<div class="ready"><h3>Your wallpaper is ready · ${Math.round(m.preview.seconds/60*10)/10} min</h3>
+      <p class="mute">${esc(m.preview.when)} · ${esc(m.preview.phase)} · ${esc(m.preview.weather || "dry")}, ${Math.round(m.preview.cover*100)}% cloud.
+      ${m.status === "done" ? "The full year is finished." : "The other seasons, tuned renderer and 4K masters are still being built and will replace this automatically."}</p>
+      <div class="wide"><img src="${f(m.preview.jpg, v)}" alt="wallpaper for right now"></div></div>` : ""}
+    <h3>Log</h3><pre id="log">${esc(lg.lines.join("\n"))}</pre></div>`;
+
+  if (d.perception) { const p = d.perception, a = p.agreement;
+    h += `<div class="card"><h2>1 · What changes with weather and time</h2>
+      <p class="mute">${esc(p.summary)}</p>
+      <p>Detector + LLM: <b>${esc(a.A.join(", "))}</b><br>Vision model: <b>${esc(a.B.join(", "))}</b><br>
+      Agreement (Jaccard) <b>${a.jaccard}</b>${a.disputed.length ? ` · tie-broken: ${esc(a.disputed.join(", "))}` : ""}</p>
+      <div class="wide"><img src="${f("01_perception/overlay.jpg", v)}" alt="segmentation overlay"></div>
+      <h3>Objects (union)</h3><table><tr><th>Object</th><th>Category</th><th>Changes with</th><th>Found by</th></tr>
+      ${p.objects.filter(o => o.effects.length).map(o => `<tr><td>${esc(o.label)}</td><td>${esc(o.category)}</td>
+        <td>${esc(o.effects.join(", "))}</td><td>${esc(o.sources.join("+"))}</td></tr>`).join("")}</table></div>`; }
+
+  if (d.plan) { const p = d.plan;
+    h += `<div class="card"><h2>2 · Season phases for ${esc(p.location?.name)}</h2><table><tr><th>From</th><th>Phase</th><th>Look</th></tr>
+      ${p.phases.map(x => `<tr><td>${esc(x.start_mmdd)}</td><td>${esc(x.name)}${x.id===p.base?" <span class='badge base'>your image</span>":""}</td>
+      <td>${esc(x.visual_changes)}</td></tr>`).join("")}</table>
+      <p class="mute">Snow-cover template: ${p.snow ? "yes (used when real snow depth ≥ 2 cm)" : "no"}. ${esc(p.reasoning)}</p></div>`; }
+
+  const pk = Object.keys(d.plates || {});
+  if (pk.length) {
+    h += `<div class="card"><h2>3 · Templates (image generation, review loop A)</h2><div class="grid">
+      ${pk.sort().map(k => { const x = d.plates[k];
+        return `<figure><img loading="lazy" src="${f("03_plates/"+k+".png", v)}" alt="${esc(k)}"><figcaption><b>${esc(k)}</b>
+        <span class="badge ${esc(x.status)}">${esc(x.status)}</span> ${x.score ? x.score.toFixed(2) : ""} · ${x.attempts} attempt(s)
+        ${(x.issues||[]).filter(i=>i.confirmed).map(i => `<br>• ${esc(i.type)}: ${esc(i.what)}`).join("")}</figcaption></figure>`; }).join("")}
+      </div></div>`; }
+
+  if (d.renderer.length) {
+    h += `<div class="card"><h2>5 · Renderer code (local code model, review loop B)</h2><table><tr><th>Version</th><th>Mean</th><th>Frames passing</th></tr>
+      ${d.renderer.map(r => `<tr><td>v${r.version}</td><td>${r.mean.toFixed(2)}</td><td>${r.frames.filter(x=>x.passed).length}/${r.frames.length}</td></tr>`).join("")}</table>`;
+    const last = d.renderer[d.renderer.length - 1];
+    h += `<h3>v${last.version} test frames</h3><div class="grid">${last.frames.map(x => `<figure>
+      <img loading="lazy" src="${f(`05_renderer/v${last.version}/${x.id}.png`, v)}" alt="${esc(x.id)}">
+      <figcaption><b>${esc(x.id)}</b> <span class="badge ${x.passed?"PASS":"fail"}">${x.mean.toFixed(2)}</span><br>${esc(x.cond)}
+      ${x.issues.filter(i=>i.confirmed).slice(0,2).map(i => `<br>• ${esc(i.type)}: ${esc(i.what)}`).join("")}</figcaption></figure>`).join("")}</div></div>`; }
+
+  if (d.report) h += `<div class="card"><h2>24 hours of the base phase</h2><div class="wide"><img src="${f("06_finalize/day_strip.jpg", v)}" alt="day strip"></div></div>`;
+
+  if (d.result || m.preview) h += `<div class="card"><h2>Preview any moment</h2>${d.result ? "" : `<p class="mute">Only today's season exists so far; other dates use it until their templates are made.</p>`}<div class="row">
+      <div><label>Date and time</label><input id="pw" type="datetime-local" value="2026-10-15T18:00"></div>
+      <div><label>Cloud cover</label><input id="pc" type="number" min="0" max="1" step="0.05" value="0.3"></div>
+      <div><label>Weather</label><select id="px"><option value="">dry</option><option>rain</option><option>storm</option><option>fog</option><option>snow</option></select></div>
+      <div><label>Snow on ground (m)</label><input id="ps" type="number" min="0" step="0.01" value="0"></div></div>
+      <button onclick="preview()">Render</button> <span id="pinfo" class="mute"></span>
+      <div class="wide" style="margin-top:10px"><img id="pimg" alt="" style="display:none"></div></div>`;
+
+  const keep = document.getElementById("pimg")?.src;
+  $("#detail").innerHTML = h;
+  if (keep) { $("#pimg").src = keep; $("#pimg").style.display = "block"; }
+  const lgEl = $("#log"); if (lgEl) lgEl.scrollTop = lgEl.scrollHeight;
+  if (["done","failed","nothing_to_change"].includes(m.status)) { clearInterval(timer); timer = null; }
+}
+
+async function preview() {
+  const when = $("#pw").value.replace("T", " "); $("#pinfo").textContent = "Rendering…";
+  const q = new URLSearchParams({when, cover:$("#pc").value, weather:$("#px").value, snow:$("#ps").value});
+  const r = await fetch(`/api/jobs/${current}/render?` + q);
+  if (!r.ok) { $("#pinfo").textContent = "Error: " + (await r.json()).detail; return; }
+  $("#pimg").src = URL.createObjectURL(await r.blob()); $("#pimg").style.display = "block";
+  $("#pinfo").textContent = `phase ${r.headers.get("X-Phase")}, sun ${r.headers.get("X-Sun-Alt")}°`;
+}
+loadJobs();
+</script>
+</body>
+</html>

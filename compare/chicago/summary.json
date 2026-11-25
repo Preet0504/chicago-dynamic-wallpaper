@@ -1,0 +1,49 @@
+{
+  "panel_mean": {
+    "original": 4.12,
+    "generated": 3.9
+  },
+  "wins": {
+    "original": 34,
+    "generated": 14,
+    "tie": 0
+  },
+  "seconds": {
+    "original": 2.53,
+    "generated": 1.21
+  },
+  "edge_recall": {
+    "original": 0.99,
+    "generated": 0.95
+  },
+  "per_metric": {
+    "style_match": {
+      "original": 4.08,
+      "generated": 4.1
+    },
+    "composition_intact": {
+      "original": 4.33,
+      "generated": 4.29
+    },
+    "realism": {
+      "original": 3.96,
+      "generated": 3.9
+    },
+    "light_consistency": {
+      "original": 3.62,
+      "generated": 3.33
+    },
+    "season_correct": {
+      "original": 4.77,
+      "generated": 4.17
+    },
+    "edges_artifacts": {
+      "original": 4.12,
+      "generated": 3.75
+    },
+    "would_set_as_wallpaper": {
+      "original": 3.92,
+      "generated": 3.73
+    }
+  }
+}

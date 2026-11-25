@@ -1,0 +1,5368 @@
+{
+  "01_spring_clear": {
+    "cond": "spring, 2026-04-15 06:05 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 3.5,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 4.0,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.983,
+        "mean_luma": 0.314,
+        "lit_fraction_in_lights": 0.472,
+        "sky_levels_per_range": 2.3399999141693115,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "Lanterns are glowing brightly in broad daylight (06:05 clear morning). In reality, electric/gas lanterns would be off or barely visible against the sky. This breaks realism and light consistency."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The lake surface shows strong reflections of artificial lights that shouldn\u2019t be on at this time. Also, no moon reflection despite it being a key feature in the original \u2014 now missing entirely."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "Original had starry night with full moon; candidate has clear dawn sky \u2014 correct for time, but loses iconic moon element. Not an error per se, but compositionally incomplete without moon or stars."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            500,
+            1000,
+            700
+          ],
+          "what": "Hanging lantern on right pavilion appears to float slightly detached from structure \u2014 subtle alignment issue, possibly due to inpainting or layering."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            200,
+            300
+          ],
+          "what": "Pagoda windows glow unnaturally bright orange against twilight sky \u2014 over-saturated compared to ambient light, feels digitally enhanced rather than naturally lit."
+        }
+      ],
+      "seconds": 3.01,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 5,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 3.5,
+          "light_consistency": 3.0,
+          "season_correct": 4.5,
+          "edges_artifacts": 2.5,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.429,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.624,
+        "mean_luma": 0.304,
+        "lit_fraction_in_lights": 0.031,
+        "sky_levels_per_range": 1.3300000429153442,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": true,
+          "support": 0,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "static structure moved/changed: only 62% of the original's edges are kept"
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            330,
+            1000,
+            1000
+          ],
+          "what": "There is a noticeable smudge or blob artifact on the roof of the smaller pagoda in the lower-left quadrant."
+        },
+        {
+          "type": "seam_hard_edge",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            0,
+            1000,
+            250
+          ],
+          "what": "The cherry blossom branch in the top-right corner has a hard, unnatural cut-off edge against the sky, indicating a poor mask or compositing error."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            250,
+            500
+          ],
+          "what": "The lanterns and windows in the pagoda and town are fully lit, which is inconsistent with the 06:05 AM sunrise time and bright sky."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            500,
+            1000,
+            750
+          ],
+          "what": "The hanging lantern on the right pavilion appears to be floating in mid-air, detached from the roof structure."
+        }
+      ],
+      "seconds": 1.37,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 3,
+        "reason": "The right image is a more believable and faithful representation of the specified moment (spring, clear weather, dawn) and the original painting's style. It correctly depicts the sky as a deep twilight blue with a visible moon and stars, which is consistent with the time of 06:05 in spring. The lighting on the pagoda, buildings, and lanterns is warm and consistent with the scene. In contrast, the left image has a flat, uniform blue sky that lacks the detail and atmosphere of the original. Its lighting is also less convincing, with some areas appearing unnaturally dark or lit. The right image is cleaner, with no visible artifacts, and its composition and style are a much closer match to the source painting.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right matches dawn/06:05 with a clear gradient sky, spring blossoms and petals, sharper details and fewer smudges; left is softer/blurrier and less crisp.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "02_spring_partly_cloudy": {
+    "cond": "spring, 2026-04-15 13:00 local time, partly cloudy",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.997,
+        "mean_luma": 0.593,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.8200000524520874,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            480,
+            0,
+            1000,
+            180
+          ],
+          "what": "A few cherry petals and small blossom fragments drift in the sky; they read as intentional but are slightly sparse/isolated against the large cloud mass."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            260,
+            220
+          ],
+          "what": "Upper-left sky is very clean with only a few wispy clouds, slightly less varied than the partly cloudy brief."
+        }
+      ],
+      "seconds": 1.8,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 3.5,
+          "light_consistency": 2.0,
+          "season_correct": 4.0,
+          "edges_artifacts": 3.0,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.429,
+        "min_metric": 2.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.958,
+        "mean_luma": 0.58,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.149999976158142,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            480,
+            100,
+            850,
+            610
+          ],
+          "what": "Hanging lantern and stone lanterns are lit in broad daylight (13:00), which breaks realism and light consistency."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            100,
+            300,
+            500
+          ],
+          "what": "Clouds are stylized and painterly, not matching the partly cloudy sky expected for 13:00 spring day; they look like anime clouds."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            600,
+            700,
+            900,
+            900
+          ],
+          "what": "Lake surface is too calm and glassy for a windy spring afternoon; no ripples or wind effects on water."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            300,
+            700,
+            600,
+            900
+          ],
+          "what": "Pagoda and town windows are lit as if at night, but it's 13:00 daytime; windows should be dark or show daylight reflections."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            520,
+            880,
+            580,
+            960
+          ],
+          "what": "Stone lanterns along the path are strongly illuminated during daylight, inconsistent with the 13:00 partly cloudy setting."
+        }
+      ],
+      "seconds": 0.93,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified time and season. It correctly depicts a bright, daytime scene with a blue sky and white clouds, matching the 'partly cloudy' weather and 'spring' season. The lighting on the buildings and landscape is consistent with a sunny afternoon. In contrast, the right image is a night scene, which contradicts the requested time of 13:00 (1 PM). While the right image is a faithful reproduction of the original painting's style, it fails to meet the fundamental requirement of depicting the correct time of day. The left image also appears cleaner, with sharper details and no visible artifacts.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right has brighter midday light, clearer partly-cloudy sky, vivid spring blossoms and Fuji, and matches the original composition/style more closely; left is hazier and washed out.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "03_spring_clear": {
+    "cond": "spring, 2026-04-15 19:10 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.214,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.995,
+        "mean_luma": 0.475,
+        "lit_fraction_in_lights": 0.499,
+        "sky_levels_per_range": 2.609999895095825,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sky_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            430
+          ],
+          "what": "Sky is bright daytime blue with only a faint warm horizon, inconsistent with clear 19:10 local time; original night sky/moon/stars are gone."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            735,
+            495,
+            815,
+            620
+          ],
+          "what": "Hanging lantern and stone lanterns glow strongly while the sky is still mostly bright blue, making the lighting feel mismatched."
+        },
+        {
+          "type": "sun_moon_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Moon and star field are absent; for a clear 19:10 scene the sky should read as dusk/twilight rather than daytime."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall cool blue cast is strong and slightly flatter than the original, reducing the warm dusk/lake reflection mood."
+        }
+      ],
+      "seconds": 1.96,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 2.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.714,
+        "min_metric": 2.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.881,
+        "mean_luma": 0.463,
+        "lit_fraction_in_lights": 0.157,
+        "sky_levels_per_range": 1.1399999856948853,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sky_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The sky is a uniform blue gradient, lacking the stars and moon present in the original reference, and does not match the 19:10 local time which should be twilight or night."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The lanterns and windows are lit as if it were night, but the sky is bright daylight. While acceptable for a stylized wallpaper, it breaks realism for the specified time (19:10)."
+        },
+        {
+          "type": "color_cast",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The overall color palette is shifted towards a warm, hazy daylight, losing the cool, deep blue tones of the original night scene."
+        },
+        {
+          "type": "seam_hard_edge",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            480,
+            0,
+            1000,
+            250
+          ],
+          "what": "The cherry blossom branch in the top-right corner has a jagged, hard-edged cutout against the sky, indicating a poor mask or blending artifact."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The lake surface is calm and reflects the sky, but does not reflect the bright lights of the town or pagoda, which should be visible if they are lit."
+        }
+      ],
+      "seconds": 1.08,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 3,
+        "reason": "The left image is a significantly better representation of the specified time and conditions. It correctly depicts a clear spring evening with a blue sky that transitions to a warm sunset glow near the horizon, which is consistent with the 19:10 local time in mid-April. The lighting on the buildings and landscape is bright and natural for dusk. In contrast, the right image is a night scene with a full moon and starry sky, which contradicts the 'clear' evening sky requirement and the time of day. Furthermore, the left image is cleaner, with sharper details and no visible artifacts, while the right image appears slightly softer and less detailed.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right is crisper and more saturated with cleaner sky, petals, lanterns and composition; left is hazier/washed out and less believable for clear dusk.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "04_spring_clear": {
+    "cond": "spring, 2026-04-15 22:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.5,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.125,
+        "lit_fraction_in_lights": 0.501,
+        "sky_levels_per_range": 2.369999885559082,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sun_moon_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            180,
+            50,
+            320,
+            200
+          ],
+          "what": "The prominent full moon from the reference is absent; the sky is clear/starry, which fits 'clear' but changes the original composition."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            430
+          ],
+          "what": "Cloud layer and moonlit glow are removed, making the upper sky flatter and less atmospheric than the reference."
+        }
+      ],
+      "seconds": 1.81,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.0,
+          "realism": 3.5,
+          "light_consistency": 3.0,
+          "season_correct": 4.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.5,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.112,
+        "lit_fraction_in_lights": 0.123,
+        "sky_levels_per_range": 12.100000381469727,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The sky has been significantly altered. The original features a bright, detailed moon and wispy clouds. The candidate has a dark, empty sky with sparse stars and heavy, unnatural cloud formations that"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The full moon is missing from the sky. The prompt specifies 22:00 (10 PM) in April, which would show a moon (likely waxing gibbous or full depending on the year), and the original reference clearly fe"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            500,
+            1000,
+            1000
+          ],
+          "what": "The lanterns and building lights appear too bright and lack the atmospheric glow seen in the original. The reflections on the water are also less distinct and vibrant compared to the reference."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            800,
+            950,
+            1000
+          ],
+          "what": "Wet puddles and reflective rain-like path suggest recent rain, inconsistent with clear 22:00 conditions."
+        },
+        {
+          "type": "too_dark_or_bright",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall exposure is much darker than the reference, flattening the volcano, lake and town lights."
+        }
+      ],
+      "seconds": 0.91,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 3,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The right image is a more faithful and higher-quality representation of the original painting. It correctly includes the full moon, which is essential for the specified time of 22:00, and its light realistically reflects on the lake's surface. The cherry blossoms are vibrant and in season, with petals falling naturally. In contrast, the left image is flawed: it lacks the moon, has an unnaturally dark sky, and shows a wet, reflective ground that contradicts the 'clear' weather condition. The composition and details in the right image are also cleaner and more consistent with the original artwork.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left is clearer and cleaner: dark starry sky, no rain/puddles or heavy cloud cover, and it preserves the original's composition and painted style. Right adds clouds, wet ground and a gloomier mood, less fitting for clear 22:00 spring.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "05_spring_rain": {
+    "cond": "spring, 2026-04-15 13:00 local time, rain",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 4.071,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.495,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 2.549999952316284,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during midday (13:00) in daylight; they should be off or unlit."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface lacks realistic rain ripples and shows unnatural smoothness despite heavy rain."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly gray with no sun position or directional lighting consistent with 13:00 local time."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image has a cool blue-gray cast that doesn't match natural daylight under overcast spring rain."
+        },
+        {
+          "type": "banding",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            420
+          ],
+          "what": "Broad gray cloud bands in the upper sky are soft and slightly banded, making the overcast sky feel a little flat."
+        }
+      ],
+      "seconds": 2.94,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.0,
+          "light_consistency": 2.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.071,
+        "min_metric": 2.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.548,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 2.0,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns and building windows are lit despite it being 13:00 (daytime). In the original, lights are appropriate for night; here they break realism for the requested time."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface lacks moon reflection (expected if night) but also lacks daylight sky reflection \u2014 instead appears flat gray, inconsistent with overcast rain at 13:00."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly gray with rain streaks but lacks cloud depth or atmospheric perspective expected in a rainy spring afternoon \u2014 feels flat and digitally overlaid."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            450,
+            800,
+            600
+          ],
+          "what": "Hanging lantern on right pavilion appears to float slightly detached from roof structure \u2014 no visible chain or attachment point."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image has unnatural cool-gray cast that suppresses warm tones of wood and stone, making scene feel less grounded despite correct seasonal elements."
+        }
+      ],
+      "seconds": 1.48,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The right image is a more believable and faithful representation of the specified moment (spring, rainy afternoon) and the original painting's style. It correctly depicts the scene during the day under an overcast, rainy sky, whereas the left image incorrectly shows a night scene with a full moon and starry sky. The right image also has cleaner details, with better-defined architecture and foliage, while the left image suffers from smudged textures and a lack of clarity due to the heavy rain effect.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right keeps the original's composition and painterly style with pink blossoms, drifting petals and rain, while left is too washed-out/gray and loses the spring feel; right is a bit dark for 13:00 but overall more believable and cohesive.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "06_spring_storm": {
+    "cond": "spring, 2026-04-15 21:00 local time, storm",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.173,
+        "lit_fraction_in_lights": 0.043,
+        "sky_levels_per_range": 3.059999942779541,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "too_dark_or_bright",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            120,
+            560,
+            560,
+            700
+          ],
+          "what": "Volcano and far shore are heavily swallowed by storm haze, making the landmark feel faint compared with the original."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            420
+          ],
+          "what": "Upper sky is very dark and mostly empty; storm mood is clear but slightly flat/low-detail."
+        }
+      ],
+      "seconds": 3.41,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 3.5,
+          "light_consistency": 2.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.714,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.147,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.7999999523162842,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface shows almost no reflection of pagoda lights or lanterns despite being calm and wet \u2014 physically implausible under storm conditions with artificial lighting."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during a stormy night \u2014 acceptable, but their glow is unnaturally bright and uniform, ignoring rain diffusion and atmospheric scattering; also, no reflection on wet ground or water su"
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly dark gray with no stars, moon, or cloud structure \u2014 contradicts \u20182026-04-15 21:00\u2019 (night) and lacks realism for a stormy spring night; should show heavy clouds, possibly lightning hi"
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Cherry blossoms appear too vibrant and dry \u2014 in a heavy spring storm, petals would be battered, fallen, or clinging wetly to branches; ground should show puddles and scattered petals."
+        },
+        {
+          "type": "too_dark_or_bright",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall exposure is very low; volcano, lake and town lights are heavily obscured, reducing the wallpaper's readability."
+        }
+      ],
+      "seconds": 1.46,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The right image is a more believable and faithful representation of the specified moment. It correctly depicts a storm with lightning, which is a key requirement, whereas the left image shows only rain. The lighting in the right image is more dynamic and realistic for a thunderstorm, with the lightning illuminating the clouds and landscape. The composition and style are also closer to the original painting shown in the third image, maintaining the same level of detail and atmospheric perspective. The left image appears darker and less detailed, with a flatter sky and less convincing weather effects.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right matches the spring night storm better: rain, lightning, dark clouds, cherry blossoms and the same pagoda/pavilion/lake composition as the original, while the left is too flat/dark and lacks the storm energy.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "07_spring_fog": {
+    "cond": "spring, 2026-04-15 07:00 local time, fog",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 2.5,
+          "light_consistency": 2.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 3.0,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.214,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.615,
+        "lit_fraction_in_lights": 0.015,
+        "sky_levels_per_range": 3.240000009536743,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during daytime (07:00) \u2014 unrealistic for spring morning; should be off or dim."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly foggy gray with no sunrise gradient or color \u2014 fails to reflect 07:00 local time in spring."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image has unnatural beige-gray cast \u2014 lacks warmth expected at 07:00 spring sunrise."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface lacks realistic reflections of buildings and lanterns \u2014 too flat and muted for morning light."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Mount Fuji (volcano) is missing \u2014 critical element from original reference removed entirely."
+        }
+      ],
+      "seconds": 2.6,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 2,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.429,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.6,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 7.5,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            520,
+            800,
+            1000,
+            1000
+          ],
+          "what": "Brown fallen leaves on the wet stone path read more autumn than spring; blossoms are present but the ground litter conflicts with the stated 2026-04-15 spring fog."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            740,
+            480,
+            830,
+            620
+          ],
+          "what": "Hanging lantern and stone lanterns glow strongly in a bright foggy morning; plausible for dawn but slightly inconsistent with the overall daylight wash."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Heavy grey-lavender fog flattens contrast and makes the pagoda, volcano and lake almost disappear; acceptable for fog but reduces depth."
+        }
+      ],
+      "seconds": 1.35,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 3,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The right image is a more believable and faithful representation of the specified moment. It correctly depicts the spring season with vibrant pink cherry blossoms, whereas the left image has pale, off-white flowers. The lighting in the right image is consistent with a foggy morning, featuring a warm, diffused glow from the lanterns that contrasts with the cool, misty atmosphere. In contrast, the left image has an unnatural, flat grey sky and a cold, blueish tint to the lantern light that feels out of place. Furthermore, the right image is cleaner and more detailed, with sharper architectural lines and a clearer composition that better matches the style of the original painting shown in the third image.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left matches spring blossoms and foggy early-morning light better; right is too gray/desaturated and flat for 07:00 spring.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "08_summer_clear": {
+    "cond": "summer, 2026-07-15 13:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.643,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.992,
+        "mean_luma": 0.511,
+        "lit_fraction_in_lights": 0.048,
+        "sky_levels_per_range": 1.7999999523162842,
+        "new_straight_lines": 0
+      },
+      "issues": [],
+      "seconds": 2.49,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.357,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.968,
+        "mean_luma": 0.519,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.2300000190734863,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "halo_fringe",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            60,
+            350,
+            160,
+            500
+          ],
+          "what": "Bright white glow/halo around the pagoda spire and upper roof, inconsistent with a clear midday sky."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            480,
+            0,
+            1000,
+            220
+          ],
+          "what": "Soft white cloud-like smudges/halo around the green tree branch at top right."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            880,
+            260,
+            1000
+          ],
+          "what": "Pink cherry-blossom clusters remain at the bottom edge and near the pavilion, conflicting with summer 2026-07-15."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            820,
+            650,
+            1000,
+            1000
+          ],
+          "what": "Pink blossoms still appear on the right balcony/railing area despite the summer clear-day brief."
+        }
+      ],
+      "seconds": 1.12,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 3,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified time and weather. It correctly depicts a bright, clear summer day with appropriate lighting and shadows. The right image, while vibrant, has an overly saturated color palette and slightly distorted architectural details that make it feel less authentic to the original painting's style and the requested realistic conditions.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right has a clearer blue summer sky, crisp foliage and architecture, and no halo/haze; left is hazier with a glowing spire and softer, less clean rendering.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "09_summer_partly_cloudy": {
+    "cond": "summer, 2026-07-15 19:50 local time, partly cloudy",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 3.0,
+          "composition_intact": 4.5,
+          "realism": 3.0,
+          "light_consistency": 2.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 3.5,
+          "would_set_as_wallpaper": 2.5
+        },
+        "mean": 3.286,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.989,
+        "mean_luma": 0.454,
+        "lit_fraction_in_lights": 0.437,
+        "sky_levels_per_range": 1.590000033378601,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns and building windows are lit despite it being 19:50 in summer (still bright daylight). This breaks realism and light consistency."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is clear blue with wispy clouds \u2014 should be partly cloudy as specified. Also lacks moon/stars from original, which may be acceptable for daytime, but sky feels too empty."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Original has cherry blossoms (spring); candidate has green leaves (summer) \u2014 correct for season, but style shift is jarring vs original\u2019s aesthetic."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake reflections don\u2019t match lit lanterns \u2014 if lights are on, they should reflect; if not, they shouldn\u2019t be lit. Inconsistent physics."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Tree branch top right changed from cherry blossoms to generic green leaves \u2014 compositionally similar but stylistically different."
+        }
+      ],
+      "seconds": 2.03,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 2,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 2
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 3,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 3.0,
+          "light_consistency": 2.0,
+          "season_correct": 3.0,
+          "edges_artifacts": 3.0,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.214,
+        "min_metric": 2.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.911,
+        "mean_luma": 0.47,
+        "lit_fraction_in_lights": 0.262,
+        "sky_levels_per_range": 1.309999942779541,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            650
+          ],
+          "what": "Clouds are stylized and painterly, not matching the partly cloudy summer sky expected at 19:50; too soft and unrealistic."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            400,
+            700,
+            620,
+            960
+          ],
+          "what": "Stone lanterns along path are lit despite daylight \u2014 breaks realism for 19:50 summer evening."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            600,
+            100,
+            900,
+            600
+          ],
+          "what": "Lanterns are lit in broad daylight (19:50 in summer is still bright); they should be off or dim, not glowing."
+        },
+        {
+          "type": "sun_moon_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            520
+          ],
+          "what": "Bright midday-blue sky with no dusk/moon cues, inconsistent with 2026-07-15 19:50 local time."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            700,
+            600,
+            1000,
+            900
+          ],
+          "what": "Lake surface lacks realistic reflections of buildings and sky; appears flat and inconsistent with lighting."
+        }
+      ],
+      "seconds": 1.1,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 2,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts a summer evening sky with appropriate lighting, whereas the right image is an incorrect night scene with a full moon and cherry blossoms (a spring flower), which contradicts the 'summer' and 'partly cloudy' conditions. The left image also has cleaner details, such as the foliage and lanterns, without the smudges or floating elements seen in the right image.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left shows a cleaner summer dusk/partly cloudy sky with green foliage and no moon/cherry-blossom or smudge artifacts; right has a large pink smudged cloud/haze and less crisp sky.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "10_summer_clear": {
+    "cond": "summer, 2026-07-15 22:30 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.0,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.0,
+        "min_metric": 3.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.114,
+        "lit_fraction_in_lights": 0.4,
+        "sky_levels_per_range": 2.309999942779541,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The full moon and clouds from the original reference have been removed, altering the sky composition significantly."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The tree branch in the top right corner has green leaves instead of cherry blossoms, which is inconsistent with the original spring scene but acceptable for summer."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The hanging lantern on the right side appears to be lit, which is appropriate for nighttime, but the overall lighting feels slightly off compared to the original."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The reflections on the lake do not fully match the lights and structures, creating a slight inconsistency in the scene."
+        },
+        {
+          "type": "sun_moon_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            200,
+            40,
+            330,
+            220
+          ],
+          "what": "The bright full moon and its lake reflection from the reference are absent; the sky is only stars, weakening the original night-lake mood."
+        }
+      ],
+      "seconds": 1.89,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 3.5,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.786,
+        "min_metric": 3.5,
+        "verdicts": [
+          "reject",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.12,
+        "lit_fraction_in_lights": 0.419,
+        "sky_levels_per_range": 12.100000381469727,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "season_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Top-right tree branch has green leaves instead of summer foliage or bare branches; cherry blossoms (pink) are missing entirely despite being prominent in original. Season is specified as summer (July)"
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            0,
+            1000,
+            500
+          ],
+          "what": "Hanging lantern on right pavilion is now floating mid-air without visible suspension chain or attachment point \u2014 breaks physical plausibility and deviates from original where it\u2019s clearly hung from ea"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            500,
+            500,
+            1000
+          ],
+          "what": "Pagoda and village windows show uniform warm glow, but moon is absent and sky is starry \u2014 inconsistent with 22:30 local time under clear summer night. Original had bright full moon illuminating scene;"
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            500,
+            1000,
+            1000
+          ],
+          "what": "Lake surface lacks moon reflection despite stars being visible \u2014 should reflect ambient light sources. Also, distant shoreline lights appear too bright for 22:30 summer night; overexposed compared to "
+        },
+        {
+          "type": "composition_changed",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            500,
+            1000,
+            1000
+          ],
+          "what": "Stone lanterns along path are misaligned or duplicated \u2014 one appears duplicated near bottom-right corner, breaking symmetry and spatial logic of original layout."
+        }
+      ],
+      "seconds": 0.9,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 2,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The right image is a more faithful and cleaner reproduction of the original painting. It preserves the composition, lighting, and details of the source artwork much better than the left image. The left image has noticeable artifacts, such as a strange dark smudge in the sky and less defined foliage, making it appear lower quality and less believable. While neither image perfectly matches the specified 'summer' season (the original depicts cherry blossoms, which are spring), the right image is superior in terms of technical execution and fidelity to the original style.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right keeps the original composition and style while matching a clear summer night: moonless dark sky, no cherry blossoms, crisp stars/city lights and cleaner edges; left is darker/flatter and less detailed.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "11_summer_storm": {
+    "cond": "summer, 2026-07-15 16:00 local time, storm",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.0,
+        "min_metric": 3.0,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.334,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 2.759999990463257,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            430,
+            0,
+            1000,
+            720
+          ],
+          "what": "Hanging lantern appears slightly detached from its support structure; shadow doesn\u2019t align with roof overhang."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            600,
+            300,
+            700,
+            500
+          ],
+          "what": "Lanterns are lit during daytime (16:00) under stormy sky \u2014 inconsistent with natural lighting conditions."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            800,
+            700,
+            950,
+            900
+          ],
+          "what": "Lake surface shows no reflection of lightning or storm clouds; water appears unnaturally calm and dark without specular highlights from flashes."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            300,
+            200
+          ],
+          "what": "Top-left sky lacks rain streaks and cloud density compared to rest of scene; looks like a mask edge or incomplete render."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            400,
+            100,
+            600,
+            300
+          ],
+          "what": "Pagoda windows glow warmly despite daylight hour \u2014 should be dim or unlit unless interior lights are intentionally on (unlikely in storm)."
+        }
+      ],
+      "seconds": 3.86,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 3.5,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.857,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.52,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.8300000429153442,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image has unnatural cool-gray tint that flattens colors and reduces vibrancy, making scene feel muddy rather than stormy."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns and building windows are lit despite it being 4pm in summer; daylight should make artificial lights unnecessary and unrealistic."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface shows bright city lights reflecting as if at night, but sky is overcast daylight \u2014 reflections contradict time of day."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly gray with rain streaks but lacks storm clouds or atmospheric depth expected for a summer storm at 4pm."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            820,
+            180,
+            1000
+          ],
+          "what": "Pink cherry-blossom clusters remain in the lower-left foreground despite the summer storm brief."
+        }
+      ],
+      "seconds": 1.37,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 2,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 3,
+        "reason": "The left image correctly depicts a summer storm with dark, heavy clouds, visible lightning, and wind-blown leaves, which aligns with the specified weather and season. The lighting is consistent with a stormy daytime scene. In contrast, the right image appears to be a lighter rain or mist, lacking the intensity of a storm. The third image (the original) is a night scene, which contradicts the '16:00 local time' requirement. Therefore, the left image is the only one that accurately represents the requested moment.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right shows a darker summer storm with rain, lightning, green leaves and a moody sky, closer to a stormy 16:00; left is too washed-out/foggy and lacks storm force, though both keep the original composition.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "12_summer_rain": {
+    "cond": "summer, 2026-07-15 22:00 local time, rain",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.286,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.16,
+        "lit_fraction_in_lights": 0.21,
+        "sky_levels_per_range": 3.7100000381469727,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Tree branch in top-right has green summer leaves instead of bare branches or sparse foliage appropriate for early summer rain; original had cherry blossoms (spring), but candidate should reflect July "
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during heavy rain at night \u2014 which is realistic and consistent with darkness. No issue here. Actually, lights are correctly on. So no defect. Re-evaluating: all lanterns are appropria"
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface shows reflections of town lights, which is correct. However, under heavy rain, ripples should be more pronounced and diffuse reflections slightly \u2014 currently reflections are too sharp and"
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly dark gray with rain streaks \u2014 appropriate for rainy night. But lacks any subtle variation (e.g., faint cloud texture, distant lightning glow, or moonlight diffusion through clouds). O"
+        },
+        {
+          "type": "composition_changed",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Original had cherry blossom petals falling; candidate has none \u2014 replaced by rain streaks. This is intentional and correct for weather change. No defect. Composition remains identical otherwise. All m"
+        }
+      ],
+      "seconds": 3.8,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 3.5,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.786,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.175,
+        "lit_fraction_in_lights": 0.162,
+        "sky_levels_per_range": 2.430000066757202,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The cherry blossom tree branch in the top-right corner has been replaced with green leaves, altering the iconic spring aesthetic of the original reference. While this fits the 'summer' prompt, it brea"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The hanging lantern on the right pavilion is floating in mid-air without a visible chain or support structure connecting it to the roof, unlike the original image where it is clearly suspended."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            760,
+            650,
+            1000,
+            930
+          ],
+          "what": "Pink cherry-blossom clusters remain on the right pavilion/railing despite the summer rain brief."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            880,
+            180,
+            1000
+          ],
+          "what": "Pink blossoms still appear at the lower-left edge, conflicting with summer 2026-07-15."
+        },
+        {
+          "type": "too_dark_or_bright",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall exposure is very dark and muddy, reducing the lake/town readability."
+        }
+      ],
+      "seconds": 1.45,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 2,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and faithful adaptation of the original painting for the specified moment. It correctly interprets the prompt's requirements: the sky is dark and overcast with visible rain streaks, matching the 'rain' condition. The lighting is consistent with a rainy night, with warm glows from lanterns contrasting against the cool, dark environment. In contrast, the right image depicts a clear, starry night with a full moon, which directly contradicts the 'rain' requirement. While the right image is visually beautiful, it fails to represent the requested weather. The left image also maintains the composition and style of the original painting more accurately, whereas the right image introduces elements like cherry blossoms that are not present in the source material.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "Left shows clearer rain streaks, a darker stormy summer night sky, and a cleaner, more faithful match to the original composition; right has heavier smudgy clouding and slightly less crisp detail.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "13_autumn_clear": {
+    "cond": "autumn, 2026-10-14 09:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.996,
+        "mean_luma": 0.585,
+        "lit_fraction_in_lights": 0.079,
+        "sky_levels_per_range": 2.2799999713897705,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "light_consistency",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            540,
+            620,
+            930,
+            760
+          ],
+          "what": "Warm sunset-like glow on the right horizon and hillside conflicts with the clear 09:00 sky and left-side sun glare."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            300,
+            190,
+            430
+          ],
+          "what": "Strong overexposed sun halo around the pagoda spire creates a bright bloom that feels more like a lens flare than a clear morning sun."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            230,
+            840,
+            540,
+            990
+          ],
+          "what": "Several town windows/lanterns carry warm glow despite the bright daytime scene."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            860,
+            230,
+            920,
+            270
+          ],
+          "what": "Tiny isolated white specks/leaf-like fragments appear in the clear sky near the pavilion side."
+        }
+      ],
+      "seconds": 2.97,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 3.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.357,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.963,
+        "mean_luma": 0.564,
+        "lit_fraction_in_lights": 0.004,
+        "sky_levels_per_range": 1.4199999570846558,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            760,
+            500,
+            815,
+            610
+          ],
+          "what": "Hanging lantern and stone/pagoda lights glow as if nighttime, inconsistent with clear 09:00 daylight."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            650,
+            0,
+            1000,
+            190
+          ],
+          "what": "White scalloped cloud-like shapes sit behind the top-right autumn branch despite the stated clear sky."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            40,
+            330,
+            140,
+            470
+          ],
+          "what": "Bright sun disk with a large soft halo is partly hidden behind the pagoda spire, creating a washed-out fringe."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            760,
+            230,
+            1000
+          ],
+          "what": "Lower-left roof and foreground have warm autumn color pooling that slightly flattens the clear-day contrast."
+        }
+      ],
+      "seconds": 1.11,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts a clear autumn day with appropriate lighting and foliage colors. The right image, while also an autumn scene, has a slightly more saturated and less natural color palette, and the falling leaves create a minor visual clutter that detracts from the 'clean' quality requested. Both are faithful to the original composition, but the left one feels more like a realistic photograph of the scene at the requested time.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "Left has a clearer, more natural daytime autumn light and cleaner sky/composition; right is more saturated with extra falling leaves and a less believable glow.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "14_autumn_partly_cloudy": {
+    "cond": "autumn, 2026-10-14 17:45 local time, partly cloudy",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.99,
+        "mean_luma": 0.51,
+        "lit_fraction_in_lights": 0.741,
+        "sky_levels_per_range": 2.4200000762939453,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "other",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall very close to the reference layout; only minor painterly softness and slight warm-color emphasis keep it from being a perfect ship-ready match."
+        }
+      ],
+      "seconds": 2.94,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 3.0,
+          "composition_intact": 4.0,
+          "realism": 3.5,
+          "light_consistency": 3.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 2.5,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.429,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.873,
+        "mean_luma": 0.493,
+        "lit_fraction_in_lights": 0.387,
+        "sky_levels_per_range": 1.190000057220459,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The sky has been completely replaced with stylized, oversized pink clouds that do not match the original composition or realistic weather conditions for 'partly cloudy'. The moon is also missing from "
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            0,
+            1000,
+            500
+          ],
+          "what": "The hanging lantern on the right pavilion is lit, but the scene is set at 17:45 (late afternoon/dusk) with a bright blue sky. Lanterns should not be illuminated this early unless it is fully dark, bre"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            500,
+            1000,
+            1000
+          ],
+          "what": "Stone lanterns along the path are glowing brightly despite daylight conditions. This contradicts the time of day (17:45) and creates inconsistent lighting logic."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The lake surface lacks any reflection of the massive pink clouds above, which breaks realism. Even if stylized, water should reflect the sky\u2019s dominant features."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            500,
+            620
+          ],
+          "what": "Oversized pink cloud mass dominates the sky and partly swallows the volcano, making the partly cloudy dusk feel more dramatic than the reference."
+        }
+      ],
+      "seconds": 1.16,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 2,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 5,
+          "edges_artifacts": 1,
+          "would_set_as_wallpaper": 2
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts the season as autumn with yellow and orange foliage, whereas the right image has red maple leaves that are less typical for mid-October in this context and introduces floating leaf artifacts. The lighting in the left image is consistent with late afternoon (17:45), while the right image appears to be set at dusk or night. Furthermore, the left image maintains the original painting's composition and style more faithfully, without the added elements like the large moon and stars seen in the third image, which is not one of the candidates but serves as a reference for the original style.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left matches autumn golden-hour light, partly cloudy sky, falling leaves and the original composition/style more believably; right is too dull/gray and sparse.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "15_autumn_clear": {
+    "cond": "autumn, 2026-10-14 22:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.286,
+        "min_metric": 4.0,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.115,
+        "lit_fraction_in_lights": 0.651,
+        "sky_levels_per_range": 3.4200000762939453,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "Sky is too dark and starless for 22:00 clear night \u2014 should show more stars or subtle atmospheric glow near horizon; feels artificially blackened."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            600,
+            0,
+            1000,
+            300
+          ],
+          "what": "Top-right maple leaves are too vibrant and saturated for late October 2026; should be more muted autumn tones or partially fallen to match clear night conditions."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            300,
+            200,
+            700
+          ],
+          "what": "Pagoda windows glow too brightly relative to ambient moonlight \u2014 at 22:00 clear night, interior lights should be dimmer or off unless occupied, breaking realism."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            200,
+            500,
+            800,
+            700
+          ],
+          "what": "Lake reflections of town lights are too sharp and uniform \u2014 water surface lacks natural ripples or distortion expected under clear night conditions."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            800,
+            300,
+            1000,
+            700
+          ],
+          "what": "Slight halo around pavilion roof edge against sky \u2014 likely from compositing or upscaling artifact, visible in high-res crop."
+        }
+      ],
+      "seconds": 1.44,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.0,
+        "min_metric": 3.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.1,
+        "lit_fraction_in_lights": 0.444,
+        "sky_levels_per_range": 11.600000381469727,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The full moon and prominent clouds from the original reference have been removed, altering the sky composition significantly."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            300,
+            1000,
+            600
+          ],
+          "what": "The cherry blossoms (sakura) in the original image have been replaced with yellow/green leaves, which is inconsistent with the requested October 14th autumn season (should be red/orange maple leaves o"
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            600,
+            1000,
+            1000
+          ],
+          "what": "The lanterns and building lights appear overly bright and saturated compared to the original, creating a harsh glow that doesn't match the ambient night lighting."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The lake surface is unnaturally smooth and lacks the detailed moonlight/sky reflections present in the original, making the water look flat."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            880,
+            260,
+            1000
+          ],
+          "what": "Pink blossom clusters remain at the lower-left/bottom edge, conflicting with the autumn foliage and clear 2026-10-14 night."
+        }
+      ],
+      "seconds": 0.91,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and faithful representation of the specified moment. It correctly depicts the season as autumn with red maple leaves, whereas the right image incorrectly shows pink cherry blossoms, which are a spring flower. The lighting in the left image is also more consistent with a clear night, while the right image has an unrealistic full moon and clouds that contradict the 'clear' weather condition. Furthermore, the left image's composition and style are closer to the original painting.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left shows clear night sky, autumn red/orange foliage, warm lantern light and the same pagoda/lantern/Fuji composition; right is darker, less autumnal and flatter.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "16_autumn_rain": {
+    "cond": "autumn, 2026-10-14 18:20 local time, rain",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.643,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.213,
+        "lit_fraction_in_lights": 0.275,
+        "sky_levels_per_range": 2.890000104904175,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "too_dark_or_bright",
+          "severity": 2,
+          "confirmed": true,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky and clouds are very murky/dark, slightly flattening the rain mood; still coherent but a touch heavy."
+        },
+        {
+          "type": "other",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Rain streaks are fairly uniform vertical lines across the frame, making the atmosphere feel a bit repetitive rather than fully layered."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            520,
+            760,
+            1000,
+            1000
+          ],
+          "what": "Wet-path reflections are strong and warm; they agree with the lamps but are slightly over-saturated compared with the dim rainy sky."
+        }
+      ],
+      "seconds": 3.0,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 3.5,
+          "light_consistency": 3.0,
+          "season_correct": 3.5,
+          "edges_artifacts": 3.0,
+          "would_set_as_wallpaper": 3.5
+        },
+        "mean": 3.429,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.229,
+        "lit_fraction_in_lights": 0.072,
+        "sky_levels_per_range": 1.9500000476837158,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Cherry blossoms (pink) still present on trees \u2014 incorrect for October. Should be bare branches or autumn foliage (reds/oranges/browns)."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during daylight (18:20 in October is still bright; sunset is ~17:30). Lights should be off or dim, not glowing brightly against a grey sky."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface is too calm and reflective for heavy rain \u2014 no ripples, splashes, or distortion from falling raindrops. Breaks realism."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly grey with no cloud structure or depth \u2014 looks like a flat overlay rather than realistic overcast autumn weather."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Mount Fuji is obscured by fog/rain but lacks atmospheric perspective \u2014 appears too dark and flat compared to original\u2019s clear snow-capped peak."
+        }
+      ],
+      "seconds": 1.57,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 3,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a much better representation of the specified moment. It correctly depicts an autumn scene with red and orange leaves, whereas the right image has muted, brownish foliage that looks more like late winter or early spring. The left image also features a more believable night sky with clouds and rain, while the right image's sky is a flat, uniform grey. Although the left image has some minor artifacts like halos around the lanterns, its overall composition, lighting, and seasonal accuracy make it a far superior and more believable wallpaper for the requested time and weather conditions compared to the washed-out and seasonally incorrect right image.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right shows clearer autumn foliage (red/orange leaves and hillside color), rain, dusk-like dark sky and lit lanterns while keeping the original composition; left is darker and flatter with less autumn color, though it is cleaner.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "17_autumn_fog": {
+    "cond": "autumn, 2026-10-14 13:00 local time, fog",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 3.0,
+          "light_consistency": 2.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 3.5,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.5,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.721,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 3.059999942779541,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during bright daylight (13:00), which is physically impossible and breaks realism."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Mount Fuji (volcano) is completely missing from the background \u2014 a key element of the original scene."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface shows no reflection of sky or structures, and appears unnaturally flat and fog-obscured for midday."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly overcast/foggy with no sun position or directional lighting, contradicting 13:00 local time."
+        },
+        {
+          "type": "ai_overdetail",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            430,
+            0,
+            1000,
+            220
+          ],
+          "what": "Top-right autumn branch has saturated, jagged, mosaic-like leaf clusters with harsh cutoffs rather than soft painterly foliage."
+        }
+      ],
+      "seconds": 1.87,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 2,
+          "light_consistency": 1,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 2
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 5.0,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.143,
+        "min_metric": 3.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.677,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 10.0,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit despite it being 13:00 (daytime) in autumn 2026 \u2014 inconsistent with natural lighting conditions."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            750,
+            450,
+            800,
+            550
+          ],
+          "what": "Hanging lantern on pavilion is glowing \u2014 should be off during daylight hours; breaks realism for specified time."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly gray-white fog \u2014 lacks subtle atmospheric depth or color variation expected even in heavy fog at 13:00."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface shows no reflections of buildings or mountains \u2014 plausible in fog, but overly flat; could benefit from faint mirrored tones."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Some cherry blossoms still visible (top right, bottom left) \u2014 should be fully autumn foliage by October 14; minor inconsistency."
+        }
+      ],
+      "seconds": 1.16,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts an autumn scene with red and yellow leaves, whereas the right image has yellow leaves that are less vibrant and the original painting shows pink cherry blossoms (spring). The lighting in the left image is consistent with a foggy afternoon, while the right image's lighting is flat and lacks the atmospheric depth of the original. The composition and style of the left image are also more faithful to the original painting, with better preservation of details and colors.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "Left matches autumn fog and midday haze more naturally, with a cleaner sky and no floating leaves; right is brighter/more saturated with scattered leaves in the air and a stronger glare, making it less believable.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "18_autumnlate_snow": {
+    "cond": "late autumn, 2026-11-20 13:00 local time, snow",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 2.5,
+          "composition_intact": 3.5,
+          "realism": 3.0,
+          "light_consistency": 2.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 3.0,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.143,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.636,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 3.25,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sky_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The sky is a flat, overcast grey with no sun or shadows, which is inconsistent with a clear 13:00 local time setting, even in winter."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns and building windows are lit despite it being 13:00 (daytime). This breaks the time-of-day constraint and realism."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The full moon and stars from the original night scene are missing, which is correct for daytime, but the sky lacks any daytime features like a sun or blue tones."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The tree branch in the top right has brown leaves, suggesting late autumn, but the ground and roofs are covered in heavy snow, creating a conflicting seasonal depiction."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "The lake surface is dark and reflective, mirroring the sky, but there are no visible reflections of the lit lanterns or buildings, which is physically inconsistent."
+        }
+      ],
+      "seconds": 3.14,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 2,
+          "composition_intact": 3,
+          "realism": 2,
+          "light_consistency": 1,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 2
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 3,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 5.0,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.214,
+        "min_metric": 3.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.55,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 4.869999885559082,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit in broad daylight (13:00). In the original, they were lit because it was night. They should be unlit or dim in this daylight scene."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            780,
+            260,
+            1000
+          ],
+          "what": "Roofs and foreground retain many autumn leaves with little snow accumulation."
+        }
+      ],
+      "seconds": 1.51,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts the late autumn season with orange and brown foliage, whereas the right image incorrectly shows bare branches, suggesting deep winter. The lighting in the left image is consistent with a snowy, overcast afternoon, while the right image has an unnatural, flat brightness. Furthermore, the left image maintains the original painting's composition and style more faithfully, with cleaner details and no visible artifacts like the smudges or floating elements seen in the right image.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "Left matches late-autumn snowy midday better: muted overcast light, falling snow, autumn foliage and muted roofs, with clean composition and no obvious floating/smudged artifacts. Right is snowier/brighter and more winter-like, with sparse floating leaves and busier white rooftops.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "19_winter_clear": {
+    "cond": "winter with snow lying on the ground, 2026-01-15 13:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.071,
+        "min_metric": 3.0,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.937,
+        "mean_luma": 0.579,
+        "lit_fraction_in_lights": 0.006,
+        "sky_levels_per_range": 2.1600000858306885,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            200,
+            200,
+            300,
+            300
+          ],
+          "what": "Lanterns and building lights are illuminated despite it being daytime (13:00). In a realistic winter scene, artificial lights should not be glowing this brightly against a clear blue sky."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            500,
+            500,
+            600,
+            600
+          ],
+          "what": "The lake surface is too calm and reflective for a winter day; it should show some ice or rougher texture, and the reflections of buildings are too sharp for a snowy, overcast winter atmosphere."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            800,
+            300,
+            900,
+            400
+          ],
+          "what": "Hanging lantern appears to float without visible support structure attached to the pavilion roof \u2014 breaks physical plausibility."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            740,
+            500,
+            810,
+            610
+          ],
+          "what": "Hanging lantern and stone lanterns glow warmly despite clear 13:00 daylight."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            700,
+            100,
+            800,
+            200
+          ],
+          "what": "The sky is unnaturally clear and bright blue for a winter afternoon in Japan \u2014 typically more hazy or pale gray; also lacks atmospheric depth appropriate for cold weather."
+        }
+      ],
+      "seconds": 2.4,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 3.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.071,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.879,
+        "mean_luma": 0.686,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 1.3600000143051147,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            770,
+            500,
+            810,
+            610
+          ],
+          "what": "Hanging lantern and stone lanterns glow brightly despite clear midday winter sky."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            350,
+            160,
+            830
+          ],
+          "what": "Pagoda and spire have soft white halo/fringe around edges, especially the spire and rooflines."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            480,
+            0,
+            1000,
+            210
+          ],
+          "what": "Top-right branch has feathery white snow/edge fringe that looks like a hard mask rather than clean snow."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            940,
+            90,
+            1000
+          ],
+          "what": "Pink cherry blossoms remain at the lower edge, conflicting with the snowy winter scene."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            900,
+            860,
+            1000,
+            1000
+          ],
+          "what": "Pink blossoms still appear near the pavilion/railing despite snow cover."
+        }
+      ],
+      "seconds": 1.14,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts a bright, clear winter day with a sun in the sky, matching the 13:00 local time. The lighting on the snow and buildings is consistent with daylight. In contrast, the right image is a night scene with a full moon and lit lanterns, which contradicts the '13:00' and 'clear' daytime conditions. While both images are derived from the original painting, the left one successfully adapts the composition to the correct time of day, whereas the right one appears to be a misinterpretation or a different version entirely.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right has clearer blue sky, crisper snow and architecture, less washed-out haze/halo, and a cleaner composition; left is more foggy/overexposed and less crisp.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "20_winter_clear": {
+    "cond": "winter with snow lying on the ground, 2026-01-15 16:45 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.214,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.881,
+        "mean_luma": 0.405,
+        "lit_fraction_in_lights": 0.357,
+        "sky_levels_per_range": 2.0999999046325684,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            770,
+            500,
+            810,
+            590
+          ],
+          "what": "Hanging lantern is lit despite the sky being bright sunset/twilight; lamps should be off or dim at this time of day."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            530,
+            830,
+            570,
+            940
+          ],
+          "what": "Stone lantern on the path is fully lit while ambient light is still high; inconsistent with 16:45 clear winter daylight."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            700,
+            1000,
+            990
+          ],
+          "what": "Lake surface shows city lights reflecting as if it were night, but the sky is bright sunset; reflections don't match the time."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            500
+          ],
+          "what": "Sky gradient is too smooth and lacks atmospheric depth for a clear winter sunset; looks slightly artificial."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            300,
+            200,
+            990
+          ],
+          "what": "Pagoda windows are brightly lit despite daylight; should be dim or off at 16:45 in winter."
+        }
+      ],
+      "seconds": 1.83,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 3,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 5.0,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.643,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.767,
+        "mean_luma": 0.418,
+        "lit_fraction_in_lights": 0.394,
+        "sky_levels_per_range": 1.1100000143051147,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": true,
+          "support": 0,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "static structure moved/changed: only 77% of the original's edges are kept"
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            150,
+            520,
+            620,
+            700
+          ],
+          "what": "Volcano loses the bright snow-capped summit from the reference; it reads as a muted lavender ridge rather than a snow-covered peak."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image is softer/hazier than the reference, with slightly blurred edges around the pagoda, roofs and pavilion rather than crisp painterly detail."
+        }
+      ],
+      "seconds": 1.14,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and cleaner representation of the specified moment. It correctly depicts a winter scene with snow covering the ground, trees, and rooftops, matching the 'winter with snow' requirement. The lighting, while stylized, is consistent with a clear winter sunset at 16:45. In contrast, the right image (the original) depicts a spring scene with cherry blossoms and no snow, which contradicts the prompt's requirements for season and weather. Furthermore, the left image has a cleaner composition without the floating petals seen in the original.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left has crisper detail, clearer sky, consistent winter dusk light, and cleaner edges; right is hazier/smudged and less crisp.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "21_winter_clear": {
+    "cond": "winter with snow lying on the ground, 2026-01-15 22:00 local time, clear",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.18,
+        "lit_fraction_in_lights": 0.391,
+        "sky_levels_per_range": 3.3499999046325684,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "sun_moon_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            180,
+            0,
+            330,
+            220
+          ],
+          "what": "The original's prominent full moon is absent; the clear night sky is acceptable but loses a major compositional anchor."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            180
+          ],
+          "what": "Clouds and petals are removed as intended for clear winter, but the upper sky becomes very empty and dark compared with the original's layered night atmosphere."
+        }
+      ],
+      "seconds": 1.44,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.145,
+        "lit_fraction_in_lights": 0.579,
+        "sky_levels_per_range": 11.600000381469727,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "too_dark_or_bright",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            620
+          ],
+          "what": "Upper sky is very dark and sparse, making the clear winter night feel flatter than the original."
+        },
+        {
+          "type": "floating_fragment",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            150,
+            700,
+            200,
+            820
+          ],
+          "what": "Small pale streak beside the pagoda spire looks like a stray artifact."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            330,
+            0,
+            1000,
+            260
+          ],
+          "what": "Dark cloud-like masses behind the snowy branch read slightly as smudged blobs rather than clean sky."
+        }
+      ],
+      "seconds": 0.9,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a more believable and faithful adaptation of the original painting for the specified moment. It correctly interprets the scene as a winter night, with snow covering the ground, rooftops, and trees, which aligns with the 'winter' and 'snow lying on the ground' requirements. The lighting from the lanterns and buildings creates a warm, inviting glow that contrasts beautifully with the cold, dark blue of the snowy landscape and night sky. In contrast, the right image depicts a spring scene with blooming cherry blossoms and no snow, which directly contradicts the prompt's requirements for season and weather. While the right image is a beautiful piece of art, it fails to represent the specified time and conditions. The left image is also cleaner, with no visible seams or artifacts, and its composition is a direct and effective translation of the original painting's style into a winter setting.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Right shows clearer winter snow on ground, roofs, lantern and trees, with a cleaner night sky and fewer smudges; left is darker and less consistently snowy, though both keep the original composition.",
+        "generated_on": "left"
+      }
+    ]
+  },
+  "22_winter_snow": {
+    "cond": "winter with snow lying on the ground, 2026-01-15 22:00 local time, snow",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.5,
+          "light_consistency": 4.5,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.5
+        },
+        "mean": 4.571,
+        "min_metric": 4.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.214,
+        "lit_fraction_in_lights": 0.135,
+        "sky_levels_per_range": 9.609999656677246,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "too_dark_or_bright",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            420
+          ],
+          "what": "Sky is very dark and mostly empty; the original moon/star focal point is gone, leaving the upper half flatter than the reference."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Large soft blurred snow/bokeh circles drift across the sky and can read as smudges rather than crisp falling snow."
+        }
+      ],
+      "seconds": 2.64,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 3.5,
+          "realism": 4.0,
+          "light_consistency": 4.0,
+          "season_correct": 5.0,
+          "edges_artifacts": 4.0,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.071,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "accept"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.191,
+        "lit_fraction_in_lights": 0.477,
+        "sky_levels_per_range": 6.230000019073486,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "composition_changed",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            300
+          ],
+          "what": "The full moon and starry sky from the original reference have been removed and replaced with a generic snowy night sky, altering the intended composition and atmosphere."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            500,
+            1000,
+            750
+          ],
+          "what": "The distant city lights along the far shore of the lake are significantly diminished or missing compared to the original, reducing the sense of a populated lakeside town."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Cherry blossom branches remain in full bloom (top right, bottom left) despite the scene being set in winter with snow on the ground \u2014 biologically inconsistent."
+        },
+        {
+          "type": "lights_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Some lanterns appear unnaturally bright or lack proper shadow casting under heavy snowfall conditions; e.g., the hanging lantern on the right pavilion glows without corresponding illumination on surro"
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface reflections do not match the reduced city lights or the snow-covered foreground \u2014 water appears too dark and reflective for a snowy, overcast winter night."
+        }
+      ],
+      "seconds": 1.36,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 3,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and faithful adaptation of the original painting for the specified winter scene. It correctly interprets the season by replacing the cherry blossoms with snow-covered branches and depicts a snowy night with falling snow, which aligns with the prompt. The lighting is consistent with a dark, snowy evening. In contrast, the right image fails on multiple fronts: it incorrectly shows blue-tinted cherry blossoms instead of snow, the sky is an unnatural deep blue rather than a dark night sky, and the overall color palette feels artificial and inconsistent with the 'winter with snow' requirement. While both images have some minor artifacts, the left image's adherence to the prompt's core requirements (season, weather, time) makes it significantly better.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "Right half shows clearer snowfall, snow-covered ground/roofs, cleaner sky and fewer blurry bokeh/smudges, while staying close to the original composition; left is darker and has more hazy/spotty artifacts.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "23_winterbare_overcast": {
+    "cond": "winter without snow on the ground, 2026-01-15 11:00 local time, overcast",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 3.0,
+          "composition_intact": 4.0,
+          "realism": 3.0,
+          "light_consistency": 2.5,
+          "season_correct": 3.5,
+          "edges_artifacts": 2.5,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.071,
+        "min_metric": 2.5,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.989,
+        "mean_luma": 0.552,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 15.859999656677246,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns are lit during midday (11:00 AM) under overcast sky \u2014 physically impossible and breaks realism."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 3,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Cherry blossoms still in full bloom on trees and ground \u2014 contradicts January winter setting; should be bare branches or snow."
+        },
+        {
+          "type": "sky_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Sky is uniformly gray with no cloud structure or depth \u2014 lacks realism for overcast daylight; looks like a flat mask."
+        },
+        {
+          "type": "reflection_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lake surface has no reflections of buildings or mountains \u2014 inconsistent with calm water under overcast sky."
+        },
+        {
+          "type": "composition_changed",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Original cherry blossom branches at top right replaced with bare branches \u2014 alters composition and mood significantly."
+        }
+      ],
+      "seconds": 2.21,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 2,
+          "composition_intact": 3,
+          "realism": 2,
+          "light_consistency": 1,
+          "season_correct": 2,
+          "edges_artifacts": 2,
+          "would_set_as_wallpaper": 2
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 4,
+          "light_consistency": 4,
+          "season_correct": 5,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 4
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.0,
+          "composition_intact": 4.5,
+          "realism": 3.0,
+          "light_consistency": 2.0,
+          "season_correct": 2.0,
+          "edges_artifacts": 3.5,
+          "would_set_as_wallpaper": 3.0
+        },
+        "mean": 3.143,
+        "min_metric": 2.0,
+        "verdicts": [
+          "reject",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "edge_recall_static": 0.97,
+        "mean_luma": 0.606,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 3.0999999046325684,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Lanterns and building lights are glowing brightly in broad daylight (11:00 AM overcast). In reality, these would be off or barely visible."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 3,
+          "confirmed": true,
+          "support": 2,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Prompt requested 'winter without snow on the ground'. The candidate shows heavy snow covering roofs, ground, and trees, directly contradicting the instruction."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            520,
+            330
+          ],
+          "what": "Faint gray smudge/cloud blobs in the upper-left sky look like artifacts rather than clean overcast cloud."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall palette is very desaturated/gray, making the scene feel flatter and less like the original lakeside town."
+        }
+      ],
+      "seconds": 1.18,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 4,
+          "composition_intact": 5,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 2,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 2,
+          "edges_artifacts": 3,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "generated",
+        "margin": 2,
+        "reason": "The left image is a much more believable representation of the specified conditions: winter, overcast, and 11:00 AM. The lighting is soft and diffuse, consistent with an overcast day, and the scene is rendered in cool, muted tones that evoke a cold atmosphere. In contrast, the right image has overly saturated colors and warm lighting that feels more like a sunny afternoon or a stylized illustration rather than a realistic depiction of the requested time and weather. While the right image is cleaner, its failure to accurately portray the specified moment makes it a less suitable wallpaper for this specific request.",
+        "generated_on": "left"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "Left matches overcast midday winter with no snow on the ground and keeps the original composition/style; right is snow-covered and looks more wintry/cold than specified.",
+        "generated_on": "right"
+      }
+    ]
+  },
+  "24_winter_fog": {
+    "cond": "winter with snow lying on the ground, 2026-01-15 08:00 local time, fog",
+    "original": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 4.5,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.214,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.638,
+        "lit_fraction_in_lights": 0.0,
+        "sky_levels_per_range": 4.369999885559082,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            700,
+            480,
+            830,
+            630
+          ],
+          "what": "Hanging lantern and stone lanterns glow strongly in a bright foggy 08:00 scene, making the time of day read more like night than early morning."
+        },
+        {
+          "type": "smudge_blob",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            330,
+            1000,
+            820
+          ],
+          "what": "Fog is so heavy that the volcano, lake and town are almost erased, weakening the original lakeside-town read."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall image is very washed-out beige/grey; contrast and color separation are lower than the original."
+        },
+        {
+          "type": "halo_fringe",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            520,
+            800,
+            620,
+            950
+          ],
+          "what": "Stone lanterns have soft bright halos that feel slightly over-glowed against the fog."
+        }
+      ],
+      "seconds": 3.32,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 4,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "generated": {
+      "scores": {
+        "per_metric": {
+          "style_match": 4.5,
+          "composition_intact": 4.5,
+          "realism": 4.0,
+          "light_consistency": 3.5,
+          "season_correct": 4.0,
+          "edges_artifacts": 4.5,
+          "would_set_as_wallpaper": 4.0
+        },
+        "mean": 4.143,
+        "min_metric": 3.5,
+        "verdicts": [
+          "accept",
+          "revise"
+        ]
+      },
+      "metrics": {
+        "mean_luma": 0.606,
+        "lit_fraction_in_lights": 0.017,
+        "sky_levels_per_range": 16.0,
+        "new_straight_lines": 0
+      },
+      "issues": [
+        {
+          "type": "lights_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            740,
+            500,
+            810,
+            610
+          ],
+          "what": "Hanging lantern and stone lanterns glow warmly despite the stated 08:00 foggy morning; lamps should be off or only faintly lit."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            180
+          ],
+          "what": "Top-right branch still carries blossom-like clusters rather than snow-covered bare branches, conflicting with January snow."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            900,
+            140,
+            1000
+          ],
+          "what": "Pink blossoms remain at the lower-left edge instead of being absent or snow-covered."
+        },
+        {
+          "type": "season_wrong",
+          "severity": 2,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            880,
+            880,
+            1000,
+            1000
+          ],
+          "what": "Pink blossoms remain at the lower-right edge, inconsistent with winter snow."
+        },
+        {
+          "type": "color_cast",
+          "severity": 1,
+          "confirmed": false,
+          "support": 1,
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "what": "Overall scene is very washed-out gray with low contrast; fog is plausible but slightly flattens the original night-to-morning transition."
+        }
+      ],
+      "seconds": 1.4,
+      "per_model": {
+        "qwen3.5:122b": {
+          "style_match": 5,
+          "composition_intact": 5,
+          "realism": 5,
+          "light_consistency": 5,
+          "season_correct": 5,
+          "edges_artifacts": 5,
+          "would_set_as_wallpaper": 5
+        },
+        "inkling-2-mini:26b-a5b": {
+          "style_match": 4,
+          "composition_intact": 4,
+          "realism": 3,
+          "light_consistency": 2,
+          "season_correct": 3,
+          "edges_artifacts": 4,
+          "would_set_as_wallpaper": 3
+        }
+      }
+    },
+    "pair": [
+      {
+        "model": "qwen3.5:122b",
+        "winner": "original",
+        "margin": 2,
+        "reason": "The left image is a more believable and faithful adaptation of the original painting for the specified moment. It correctly interprets the scene as a foggy winter morning, with muted, cool light and snow-covered ground. The composition is cleaner, with no floating elements or smudges. In contrast, the right image fails on multiple fronts: the sky is an unnatural, flat blue that contradicts the foggy weather; the cherry blossoms are out of season for January; and the overall lighting feels inconsistent and digitally altered, making it less believable than the left image.",
+        "generated_on": "right"
+      },
+      {
+        "model": "inkling-2-mini:26b-a5b",
+        "winner": "original",
+        "margin": 1,
+        "reason": "Left feels more winter-specific (bare snow-laden branch, snowy roofs/ground) and retains the original's painterly composition; right is cleaner but cooler/flatter and includes blossom-like foliage that reads less wintry.",
+        "generated_on": "right"
+      }
+    ]
+  }
+}

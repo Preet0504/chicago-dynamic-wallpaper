@@ -1,0 +1,194 @@
+[
+  {
+    "id": "01_spring_clear",
+    "when": "2026-04-15 06:05",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "02_spring_partly_cloudy",
+    "when": "2026-04-15 13:00",
+    "cover": 0.35,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "03_spring_clear",
+    "when": "2026-04-15 19:10",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "04_spring_clear",
+    "when": "2026-04-15 22:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "05_spring_rain",
+    "when": "2026-04-15 13:00",
+    "cover": 1.0,
+    "weather": "rain",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "06_spring_storm",
+    "when": "2026-04-15 21:00",
+    "cover": 1.0,
+    "weather": "storm",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "07_spring_fog",
+    "when": "2026-04-15 07:00",
+    "cover": 1.0,
+    "weather": "fog",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "08_summer_clear",
+    "when": "2026-07-15 13:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "09_summer_partly_cloudy",
+    "when": "2026-07-15 19:50",
+    "cover": 0.35,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "10_summer_clear",
+    "when": "2026-07-15 22:30",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "11_summer_storm",
+    "when": "2026-07-15 16:00",
+    "cover": 1.0,
+    "weather": "storm",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "12_summer_rain",
+    "when": "2026-07-15 22:00",
+    "cover": 1.0,
+    "weather": "rain",
+    "intensity": 0.4,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "13_autumn_clear",
+    "when": "2026-10-14 09:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "14_autumn_partly_cloudy",
+    "when": "2026-10-14 17:45",
+    "cover": 0.35,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "15_autumn_clear",
+    "when": "2026-10-14 22:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "16_autumn_rain",
+    "when": "2026-10-14 18:20",
+    "cover": 1.0,
+    "weather": "rain",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "17_autumn_fog",
+    "when": "2026-10-14 13:00",
+    "cover": 1.0,
+    "weather": "fog",
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "18_autumnlate_snow",
+    "when": "2026-11-20 13:00",
+    "cover": 1.0,
+    "weather": "snow",
+    "intensity": 0.4,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "19_winter_clear",
+    "when": "2026-01-15 13:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.05
+  },
+  {
+    "id": "20_winter_clear",
+    "when": "2026-01-15 16:45",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.05
+  },
+  {
+    "id": "21_winter_clear",
+    "when": "2026-01-15 22:00",
+    "cover": 0.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.05
+  },
+  {
+    "id": "22_winter_snow",
+    "when": "2026-01-15 22:00",
+    "cover": 1.0,
+    "weather": "snow",
+    "intensity": 1.0,
+    "snow_depth_m": 0.05
+  },
+  {
+    "id": "23_winterbare_overcast",
+    "when": "2026-01-15 11:00",
+    "cover": 1.0,
+    "weather": null,
+    "intensity": 1.0,
+    "snow_depth_m": 0.0
+  },
+  {
+    "id": "24_winter_fog",
+    "when": "2026-01-15 08:00",
+    "cover": 1.0,
+    "weather": "fog",
+    "intensity": 1.0,
+    "snow_depth_m": 0.05
+  }
+]
