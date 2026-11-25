@@ -22,6 +22,7 @@ import timeofday as T  # noqa: E402
 STATE = os.path.join(HERE, "state.json")
 FRAMES = os.path.join(HERE, "frames")
 SETTER = os.path.join(HERE, "bin", "setwallpaper")
+KEEP_FRAMES = 12
 
 
 def log(msg):
@@ -75,23 +76,59 @@ def scene_for(when, snow_depth_m):
     return wanted[-1]
 
 
+def save_state(state):
+    """Atomic write: the wallpaper agent may read state.json at any moment (on a Space switch)."""
+    tmp = STATE + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(state, f, indent=2)
+    os.replace(tmp, STATE)
+
+
+def weather_info(cur):
+    return "clouds=%s%% code=%s temp=%sC snow=%scm" % (
+        cur.get("cloud_cover"), cur.get("weather_code"), cur.get("temperature_2m"),
+        round(100 * (cur.get("snow_depth") or 0)))
+
+
+# After boot/wake the network is often not up yet. Render right away with the last-known weather
+# (the time of day is what matters most), then keep retrying and re-render once fresh weather arrives.
+RETRY_EVERY = 30      # seconds between weather retries
+RETRY_FOR = 600       # give up after this long; the :00/:30 schedule takes over
+
+
 def main(argv):
     arg = lambda k: argv[argv.index(k) + 1] if k in argv else None
     state = load_state()
-    when = T.parse_when(arg("--at")) if arg("--at") else dt.datetime.now(T.TZ)
+    fixed_time = bool(arg("--at"))
+    when = T.parse_when(arg("--at")) if fixed_time else dt.datetime.now(T.TZ)
     if arg("--cover"):
-        cover, info = float(arg("--cover")), "manual cover"
-    else:
+        render_and_set(state, argv, when, float(arg("--cover")), "manual cover")
+        return
+    try:
+        state["weather"] = fetch_weather()
+        fresh, info = True, weather_info(state["weather"])
+    except Exception as e:
+        fresh, info = False, "weather fetch failed (%s), using last known" % e
+    render_and_set(state, argv, when, None, info)
+    if fresh or fixed_time:
+        return
+    deadline = time.time() + RETRY_FOR
+    while time.time() < deadline:
+        time.sleep(RETRY_EVERY)
         try:
-            cur = fetch_weather()
-            state["weather"] = cur
-            cover = cur.get("cloud_cover", 30) / 100.0
-            info = "clouds=%s%% code=%s temp=%sC snow=%scm" % (
-                cur.get("cloud_cover"), cur.get("weather_code"), cur.get("temperature_2m"),
-                round(100 * (cur.get("snow_depth") or 0)))
-        except Exception as e:
-            cover = state.get("weather", {}).get("cloud_cover", 30) / 100.0
-            info = "weather fetch failed (%s), using last known" % e
+            state["weather"] = fetch_weather()
+        except Exception:
+            continue
+        render_and_set(state, argv, dt.datetime.now(T.TZ), None,
+                       weather_info(state["weather"]) + " (after retry)")
+        return
+    log("weather still unreachable after %ds; next scheduled run will retry" % RETRY_FOR)
+
+
+def render_and_set(state, argv, when, cover, info):
+    arg = lambda k: argv[argv.index(k) + 1] if k in argv else None
+    if cover is None:
+        cover = state.get("weather", {}).get("cloud_cover", 30) / 100.0
     # raw cloud % -> renderer scale (clear < 20%, overcast > 85%)
     cover_r = 0.0 if cover < 0.2 else min(1.0, 0.15 + (cover - 0.2) * 1.1) if cover < 0.85 else 1.0
 
@@ -108,12 +145,13 @@ def main(argv):
     log("[%s|%s %.2f] rendered %s %dx%d in %.1fs  sun %.1f° moon %.1f° (%.0f%% lit)  cover %.2f  [%s]" % (
         scene, wx or "dry", inten, when.strftime("%H:%M"), T.OUT_W, T.OUT_H, time.time() - t0,
         st["sun_alt"], st["moon_alt"], st["moon_illum"] * 100, cover_r, info))
-    subprocess.run([SETTER, out], check=True)
-    for old in sorted(glob.glob(os.path.join(FRAMES, "wallpaper-*.png")))[:-2]:  # macOS needs new names
-        os.remove(old)
+    subprocess.run([SETTER, out], check=True)   # visible Space on every display; the agent does the rest
     state.update(current=out, updated=dt.datetime.now().isoformat(timespec="seconds"))
-    with open(STATE, "w") as f:
-        json.dump(state, f, indent=2)
+    save_state(state)
+    # macOS caches by file name, so every frame gets a new one. Keep several: Spaces that are not
+    # visible still point at an older frame until the agent updates them on switch.
+    for old in sorted(glob.glob(os.path.join(FRAMES, "wallpaper-*.png")))[:-KEEP_FRAMES]:
+        os.remove(old)
 
 
 if __name__ == "__main__":
